@@ -28,77 +28,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { WHATSAPP_LINK_WITH_MESSAGE } from "@/lib/constants";
+import allPackages from "@/data/packages.json";
 
-const europePackages = [
-  {
-    id: 1,
-    title: "Europa Clásica",
-    destinations: "París, Roma, Barcelona, Madrid",
-    duration: "15 días / 14 noches",
-    price: "Desde $50,000 MXN",
-    includes: [
-      "Vuelos redondos",
-      "Hoteles 4★",
-      "Desayunos",
-      "Traslados",
-      "Tours guiados",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80",
-    tag: "Más popular",
-  },
-  {
-    id: 2,
-    title: "Maravillas de Italia",
-    destinations: "Roma, Florencia, Venecia, Milán",
-    duration: "12 días / 11 noches",
-    price: "Desde $45,000 MXN",
-    includes: [
-      "Vuelos redondos",
-      "Hoteles 4★",
-      "Desayunos",
-      "Trenes internos",
-      "Tours",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=600&q=80",
-    tag: null,
-  },
-  {
-    id: 3,
-    title: "España Completa",
-    destinations: "Madrid, Barcelona, Sevilla, Granada",
-    duration: "14 días / 13 noches",
-    price: "Desde $48,000 MXN",
-    includes: [
-      "Vuelos redondos",
-      "Hoteles 4★",
-      "Desayunos",
-      "AVE incluido",
-      "Excursiones",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=600&q=80",
-    tag: null,
-  },
-  {
-    id: 4,
-    title: "Francia & Suiza",
-    destinations: "París, Ginebra, Zúrich, Lucerna",
-    duration: "10 días / 9 noches",
-    price: "Desde $55,000 MXN",
-    includes: [
-      "Vuelos redondos",
-      "Hoteles 4★",
-      "Desayunos",
-      "Trenes panorámicos",
-      "Tours",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?w=600&q=80",
-    tag: "Premium",
-  },
-];
+const europePackages = allPackages.filter((p: any) => p.continent === "europa");
 
 const forWhom = [
   {
@@ -214,7 +146,7 @@ export function ViajeEuropaClient() {
             </h1>
             <p className="text-xl lg:text-2xl mb-8 text-white/90">
               Desde{" "}
-              <span className="text-warning font-bold">$50,000 MXN</span> con
+              <span className="text-warning font-bold">$39,900 MXN</span> con
               vuelos, hoteles y acompañamiento personalizado
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -276,44 +208,41 @@ export function ViajeEuropaClient() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {europePackages.map((pkg) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {europePackages.map((pkg: any) => (
               <Card
                 key={pkg.id}
                 className="overflow-hidden group hover:shadow-strong transition-all"
               >
-                <div className="relative aspect-video overflow-hidden">
+                <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
-                    src={pkg.image}
+                    src={pkg.flyerImage}
                     alt={pkg.title}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
-                  {pkg.tag && (
-                    <Badge className="absolute top-4 left-4 bg-accent">
-                      {pkg.tag}
+                  {pkg.departureCity && (
+                    <Badge className="absolute top-4 left-4 bg-secondary text-secondary-foreground z-10">
+                      Desde {pkg.departureCity}
                     </Badge>
                   )}
-                  <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                    <p className="text-white text-2xl font-bold">{pkg.price}</p>
+                  <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-4 z-10">
+                    <p className="text-white text-2xl font-bold">Desde ${pkg.price?.toLocaleString()} {pkg.currency}</p>
                   </div>
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-2">{pkg.title}</h3>
                   <p className="text-muted-foreground mb-2 flex items-center gap-2">
-                    <MapPin className="h-4 w-4" /> {pkg.destinations}
+                    <MapPin className="h-4 w-4 flex-shrink-0" />
+                    <span className="truncate">
+                      {Array.isArray(pkg.destinations) ? pkg.destinations.slice(0, 4).join(", ") : pkg.destinations}
+                      {Array.isArray(pkg.destinations) && pkg.destinations.length > 4 ? "..." : ""}
+                    </span>
                   </p>
                   <p className="text-muted-foreground mb-4 flex items-center gap-2">
                     <Clock className="h-4 w-4" /> {pkg.duration}
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {pkg.includes.map((item, i) => (
-                      <Badge key={i} variant="secondary" className="text-xs">
-                        {item}
-                      </Badge>
-                    ))}
-                  </div>
                   <div className="flex gap-3">
                     <Button
                       render={
@@ -325,14 +254,7 @@ export function ViajeEuropaClient() {
                       }
                       className="flex-1 bg-gradient-primary gap-2"
                     >
-                      <MessageCircle className="h-4 w-4" /> WhatsApp
-                    </Button>
-                    <Button
-                      render={<Link href="/contacto" />}
-                      variant="outline"
-                      className="flex-1 border-accent text-accent hover:bg-accent hover:text-accent-foreground"
-                    >
-                      Más info
+                      <MessageCircle className="h-4 w-4" /> Cotizar
                     </Button>
                   </div>
                 </CardContent>
