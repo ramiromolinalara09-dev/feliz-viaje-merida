@@ -25,7 +25,7 @@ export async function POST(request: Request) {
 
     await resend.emails.send({
       from: "Feliz Viaje Web <onboarding@resend.dev>",
-      to: process.env.CONTACT_EMAIL_TO || "reservaciones@merida.felizviaje.mx",
+      to: ["felizviajemerida1@gmail.com", "ramiromolinalara09@gmail.com"],
       replyTo: email,
       subject: `Nuevo contacto: ${nombre} - ${servicio}`,
       html: `
