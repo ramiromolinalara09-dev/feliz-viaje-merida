@@ -109,6 +109,7 @@ Si no encuentras algún dato, usa null.
 Responde SOLO con un JSON válido, sin markdown ni texto adicional:
 {
   "title": "nombre del paquete (ej: Europa Clásica)",
+  "departureCity": "ciudad de salida si aparece en el flyer (ej: CDMX, Monterrey, Guadalajara, Querétaro, Cancún), o null",
   "destinations": ["lista", "de", "ciudades", "visitadas"],
   "countries": ["lista", "de", "países"],
   "duration": "duración tal como aparece (ej: 17D / 15N)",
@@ -181,7 +182,7 @@ async function main() {
         const parsed = await extractWithGemini(imageBuffer, file.fileName);
         newPkgs.push({
           id: file.id, title: parsed.title || file.fileName.replace(/\.[^.]+$/, "").replace(/-/g, " "),
-          continent: file.continent, departureCity: file.departureCity || null,
+          continent: file.continent, departureCity: file.departureCity || parsed.departureCity || null,
           destinations: parsed.destinations || [], countries: parsed.countries || [],
           duration: parsed.duration || null, dates: parsed.dates || [],
           price: parsed.price || null, currency: parsed.currency || "MXN",
