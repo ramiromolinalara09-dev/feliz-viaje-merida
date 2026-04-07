@@ -59,6 +59,38 @@
     "operator": "Eme Travel"
   },
   {
+    "id": "america--salidas-desde-cdmx--colombia-esencial-cdmx",
+    "title": "Colombia Esencial",
+    "continent": "america",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Bogotá",
+      "Cartagena",
+      "Medellín",
+      "Guatapé"
+    ],
+    "countries": [
+      "Colombia"
+    ],
+    "duration": "8D / 7N",
+    "dates": [
+      "8 Y 26 DE ABRIL",
+      "8 Y 27 DE MAYO",
+      "18*, 28* Y 30 * DE JULIO",
+      "4*, 6* Y 11* AGOSTO",
+      "19* Y 29* DE SEPTIEMBRE",
+      "9, 15* Y 29* OCTUBRE",
+      "7*, 19* Y 26 DE NOVIEMBRE",
+      "2 Y 5 DE DICIEMBRE"
+    ],
+    "price": 28500,
+    "currency": "MXN",
+    "includes": "Vuelos redondos México-Colombia e internos, traslados aeropuerto-hotel, hospedaje en hoteles 4 y 5 estrellas con desayuno, 2 noches en Bogotá, 2 noches en Medellín, 3 noches en Cartagena, y city tour por Cartagena.",
+    "flyerImage": "/packages/flyers/america--salidas-desde-cdmx--colombia-esencial-cdmx.png",
+    "year": 2026,
+    "operator": "EMETRAVEL COLOMBIA"
+  },
+  {
     "id": "america--salidas-desde-cdmx--brasil-esencial",
     "title": "Brasil Esencial",
     "continent": "america",
