@@ -1,35 +1,5 @@
 [
   {
-    "id": "america--salidas-desde-cdmx--colombia-esencial-cdmx",
-    "title": "Colombia Esencial",
-    "continent": "america",
-    "departureCity": "CDMX",
-    "destinations": [
-      "Bogotá",
-      "Cartagena",
-      "Medellín",
-      "Guatapé"
-    ],
-    "countries": [
-      "Colombia"
-    ],
-    "duration": "8D / 7N",
-    "dates": [
-      "1, 14 Abr",
-      "4, 27 Ago",
-      "30 Sep",
-      "22, 27 Oct",
-      "8, 19 Nov",
-      "1, 3 Dic"
-    ],
-    "price": 28500,
-    "currency": "MXN",
-    "includes": "Vuelo redondo México-Colombia con maleta documentada, vuelos internos, hospedaje con desayunos, traslados, city tours, guía de habla hispana",
-    "flyerImage": "/packages/flyers/america--salidas-desde-cdmx--colombia-esencial-cdmx.png",
-    "year": 2026,
-    "operator": "Eme Travel"
-  },
-  {
     "id": "america--salidas-desde-mty--colombia-esencial-mty",
     "title": "Colombia Esencial desde Monterrey",
     "continent": "america",
