@@ -70,7 +70,7 @@ jobs:
             const status = changed ? '🆕 Paquetes actualizados' : '✅ Sin cambios';
             resend.emails.send({
               from: 'Feliz Viaje Sync <onboarding@resend.dev>',
-              to: 'ramiromolinalara09@gmail.com',
+              to: ['ramiromolinalara09@gmail.com', 'reservaciones@merida.felizviaje.mx'],
               subject: 'Feliz Viaje — ' + status,
               html: '<h2>' + status + '</h2><pre>' + output.replace(/</g,'&lt;') + '</pre><p><a href=\"https://www.felizviajemerida.com/paquetes-de-viaje\">Ver sitio</a></p>',
             }).then(() => console.log('Email sent')).catch(e => console.error('Email error:', e));
