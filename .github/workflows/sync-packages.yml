@@ -69,7 +69,7 @@ jobs:
             const output = process.env.SYNC_OUTPUT || 'No output';
             const status = changed ? '🆕 Paquetes actualizados' : '✅ Sin cambios';
             const html = '<h2>' + status + '</h2><pre>' + output.replace(/</g,'&lt;') + '</pre><p><a href=\"https://www.felizviajemerida.com/paquetes-de-viaje\">Ver sitio</a></p>';
-            const emails = ['ramiromolinalara09@gmail.com', 'reservaciones@merida.felizviaje.mx'];
+            const emails = ['ramiromolinalara09@gmail.com', 'felizviajemerida1@gmail.com'];
             Promise.all(emails.map(to =>
               resend.emails.send({
                 from: 'Feliz Viaje Sync <onboarding@resend.dev>',
