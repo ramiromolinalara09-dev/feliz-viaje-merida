@@ -1,0 +1,47 @@
+name: Sync packages from Google Drive
+
+on:
+  schedule:
+    # Every 2 weeks on Monday at 9am Mexico City (15:00 UTC)
+    - cron: '0 15 */14 * 1'
+  workflow_dispatch: # Allow manual trigger from GitHub
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install googleapis @google/generative-ai
+
+      - name: Write service account credentials
+        run: echo '${{ secrets.GOOGLE_SERVICE_ACCOUNT }}' > /tmp/service-account.json
+
+      - name: Run sync
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GOOGLE_SERVICE_ACCOUNT_PATH: /tmp/service-account.json
+        run: node tools/drive-packages/sync-ci.mjs
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet src/data/packages.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/packages.json public/packages/flyers/
+          git commit -m "Auto-sync packages from Google Drive"
+          git push
