@@ -1491,5 +1491,39 @@
     "flyerImage": "/packages/flyers/medio-oriente--paris-y-turquia.png",
     "year": 2026,
     "operator": "Eme Travel"
+  },
+  {
+    "id": "medio-oriente--turquia-y-dubai-flyer-2026",
+    "title": "Turquía y Dubái",
+    "continent": "medio-oriente",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Estambul",
+      "Ankara",
+      "Capadocia",
+      "Pamukkale",
+      "Izmir",
+      "Bursa",
+      "Dubái"
+    ],
+    "countries": [
+      "Turquía",
+      "Emiratos Árabes Unidos"
+    ],
+    "duration": "16D / 13N",
+    "dates": [
+      "JUL: 4",
+      "JUL: 31",
+      "AGO: 7",
+      "SEP: 4",
+      "OCT: 16",
+      "NOV: 6"
+    ],
+    "price": 52900,
+    "currency": "MXN",
+    "includes": "Vuelo transatlántico México-Estambul / Dubai-México con 1 maleta documentada 22 kg. Visitas indicadas. 5 noches de alojamiento en Estambul (régimen cama & desayuno. 2 noches de alojamiento en Capadocia,1 noche en Pamukkale, 2 noches en Izmir (régimen cama, desayuno y cena). 4 noches de alojamiento en Dubái en régimen cama y desayuno. Traslados y visitas indicadas en autocar turístico.",
+    "flyerImage": "/packages/flyers/medio-oriente--turquia-y-dubai-flyer-2026.png",
+    "year": 2026,
+    "operator": "EMETRAVEL EUROPA"
   }
 ]
