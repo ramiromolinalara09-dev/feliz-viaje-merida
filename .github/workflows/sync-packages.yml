@@ -68,10 +68,14 @@ jobs:
             const changed = process.env.CHANGED === 'true';
             const output = process.env.SYNC_OUTPUT || 'No output';
             const status = changed ? '🆕 Paquetes actualizados' : '✅ Sin cambios';
-            resend.emails.send({
-              from: 'Feliz Viaje Sync <onboarding@resend.dev>',
-              to: ['ramiromolinalara09@gmail.com', 'reservaciones@merida.felizviaje.mx'],
-              subject: 'Feliz Viaje — ' + status,
-              html: '<h2>' + status + '</h2><pre>' + output.replace(/</g,'&lt;') + '</pre><p><a href=\"https://www.felizviajemerida.com/paquetes-de-viaje\">Ver sitio</a></p>',
-            }).then(() => console.log('Email sent')).catch(e => console.error('Email error:', e));
+            const html = '<h2>' + status + '</h2><pre>' + output.replace(/</g,'&lt;') + '</pre><p><a href=\"https://www.felizviajemerida.com/paquetes-de-viaje\">Ver sitio</a></p>';
+            const emails = ['ramiromolinalara09@gmail.com', 'reservaciones@merida.felizviaje.mx'];
+            Promise.all(emails.map(to =>
+              resend.emails.send({
+                from: 'Feliz Viaje Sync <onboarding@resend.dev>',
+                to,
+                subject: 'Feliz Viaje — ' + status,
+                html,
+              }).then(() => console.log('Email sent to ' + to)).catch(e => console.error('Email error for ' + to + ':', e))
+            ));
           "
