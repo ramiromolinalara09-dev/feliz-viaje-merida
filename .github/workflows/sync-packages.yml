@@ -20,16 +20,22 @@ jobs:
           node-version: '22'
 
       - name: Install dependencies
-        run: npm install googleapis @google/generative-ai
+        run: npm install googleapis @google/generative-ai resend
 
       - name: Write service account credentials
         run: echo '${{ secrets.GOOGLE_SERVICE_ACCOUNT }}' > /tmp/service-account.json
 
       - name: Run sync
+        id: sync
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GOOGLE_SERVICE_ACCOUNT_PATH: /tmp/service-account.json
-        run: node tools/drive-packages/sync-ci.mjs
+        run: |
+          OUTPUT=$(node tools/drive-packages/sync-ci.mjs 2>&1)
+          echo "$OUTPUT"
+          echo "output<<EOF" >> $GITHUB_OUTPUT
+          echo "$OUTPUT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Check for changes
         id: changes
@@ -48,3 +54,24 @@ jobs:
           git add src/data/packages.json public/packages/flyers/
           git commit -m "Auto-sync packages from Google Drive"
           git push
+
+      - name: Send notification email
+        if: always()
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          SYNC_OUTPUT: ${{ steps.sync.outputs.output }}
+          CHANGED: ${{ steps.changes.outputs.changed }}
+        run: |
+          node -e "
+            const { Resend } = require('resend');
+            const resend = new Resend(process.env.RESEND_API_KEY);
+            const changed = process.env.CHANGED === 'true';
+            const output = process.env.SYNC_OUTPUT || 'No output';
+            const status = changed ? '🆕 Paquetes actualizados' : '✅ Sin cambios';
+            resend.emails.send({
+              from: 'Feliz Viaje Sync <onboarding@resend.dev>',
+              to: 'ramiromolinalara09@gmail.com',
+              subject: 'Feliz Viaje — ' + status,
+              html: '<h2>' + status + '</h2><pre>' + output.replace(/</g,'&lt;') + '</pre><p><a href=\"https://www.felizviajemerida.com/paquetes-de-viaje\">Ver sitio</a></p>',
+            }).then(() => console.log('Email sent')).catch(e => console.error('Email error:', e));
+          "
