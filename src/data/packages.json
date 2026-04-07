@@ -1278,13 +1278,13 @@
     "operator": "Eme Travel"
   },
   {
-    "id": "europa--salidas-desde-cdmx--europa-9-naciones-cdmx-europeate",
+    "id": "europa--salidas-desde-cdmx--europa-9-naciones-2026",
     "title": "Europa 9 Naciones",
     "continent": "europa",
     "departureCity": "CDMX",
     "destinations": [
       "Lucerna",
-      "Zurich",
+      "Zúrich",
       "París",
       "Costa Azul",
       "Frankfurt",
@@ -1303,7 +1303,7 @@
       "Montecarlo"
     ],
     "countries": [
-      "Suiza",
+      "Suíza",
       "Francia",
       "Alemania",
       "España",
@@ -1313,22 +1313,21 @@
       "Inglaterra",
       "Mónaco"
     ],
-    "duration": "19D / 17N",
+    "duration": "19D/17N",
     "dates": [
-      "16 y 29 Abr",
-      "16 May",
-      "1, 8, 12, 15, 19, 22, 27, 28 Ago",
-      "5, 8, 19, 23, 26 Sep",
-      "3, 9, 17, 24 Oct",
-      "7, 14, 21, 28 Nov",
-      "5 Dic"
+      "29** ABR",
+      "1, 8, 12, 15, 19, 22, 27 Y 28 AGO",
+      "5, 9, 19, 23 Y 26 SEP",
+      "3, 9, 17, 24 Y 28 OCT",
+      "7, 14, 21 Y 28 NOV",
+      "2 Y 5 DIC"
     ],
     "price": 63000,
     "currency": "MXN",
-    "includes": "Vuelo transatlántico con maleta 23kg, traslado en ferry y tren París-Londres, autocar turístico, desayuno diario, Vaporetto, hoteles cat. turista 3*, guía de habla hispana, guías locales",
-    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--europa-9-naciones-cdmx-europeate.png",
+    "includes": "Vuelo transatlántico con maleta documentada 23 kg. Visitas indicadas. Traslado en ferry o tren Londres / París. Traslados aeropuerto - hotel. Transporte en autocar turístico para todas las transferencias y visitas programadas. Desayuno diario. Traslado en Vaporetto. Hospedaje en hoteles cat turista 3 *. Guía correo de habla hispana durante todo el recorrido. Guías locales en lugares indicados.",
+    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--europa-9-naciones-2026.png",
     "year": 2026,
-    "operator": "Eme Travel"
+    "operator": "EMETRAVEL EUROPA"
   },
   {
     "id": "europa--salidas-desde-mty--verano-con-encantos-de-europa-con-disney-mty",
