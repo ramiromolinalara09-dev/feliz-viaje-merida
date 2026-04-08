@@ -72,7 +72,7 @@ jobs:
             const emails = ['ramiromolinalara09@gmail.com', 'felizviajemerida1@gmail.com'];
             Promise.all(emails.map(to =>
               resend.emails.send({
-                from: 'Feliz Viaje Sync <onboarding@resend.dev>',
+                from: 'Feliz Viaje Sync <noreply@felizviajemerida.com>',
                 to,
                 subject: 'Feliz Viaje — ' + status,
                 html,
