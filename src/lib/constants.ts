@@ -4,6 +4,16 @@ export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}`;
 export const WHATSAPP_MESSAGE = "Hola, me interesa obtener información sobre sus servicios de viaje.";
 export const WHATSAPP_LINK_WITH_MESSAGE = `${WHATSAPP_LINK}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
+export function whatsappLinkWithText(text: string): string {
+  return `${WHATSAPP_LINK}?text=${encodeURIComponent(text)}`;
+}
+
+export function whatsappLinkForPackage(packageTitle: string): string {
+  return whatsappLinkWithText(
+    `Hola, vi su anuncio de "${packageTitle}" y me gustaría más información.`,
+  );
+}
+
 export const PHONE_NUMBER = "9999011919";
 export const PHONE_DISPLAY = "(999) 901-1919";
 export const EMAIL = "reservaciones@merida.felizviaje.mx";
