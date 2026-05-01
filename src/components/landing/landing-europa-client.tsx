@@ -168,12 +168,17 @@ const faqs = [
   {
     question: "¿Cuánto tengo que pagar para apartar mi viaje?",
     answer:
-      "Solicitamos un anticipo para asegurar tu reservación. Te confirmamos el monto exacto y los plazos en tu cotización personalizada, junto con las opciones de pago a meses sin intereses.",
+      "El anticipo mínimo para asegurar tu reservación es de $10,000 MXN, aunque en algunas temporadas puede ser menor. Te confirmamos el monto exacto en tu cotización personalizada, junto con las opciones de pago a meses sin intereses.",
   },
   {
     question: "¿Qué pasa si necesito cancelar o cambiar fechas?",
     answer:
       "Las políticas dependen del paquete y de qué tan cerca esté la fecha de viaje. Te explicamos las condiciones específicas antes de reservar y siempre recomendamos contratar el seguro de viaje, que cubre cancelaciones por causas justificadas.",
+  },
+  {
+    question: "¿Ofrecen seguro de viaje?",
+    answer:
+      "Sí. Trabajamos con coberturas que incluyen asistencia médica, equipaje y cancelación por causas justificadas. Es altamente recomendado y obligatorio para la zona Schengen. Te lo cotizamos junto con tu paquete.",
   },
   {
     question: "¿Cómo es el acompañamiento durante el viaje?",
