@@ -12,21 +12,35 @@ declare global {
 type ConversionEvent = "whatsapp_click" | "form_submit";
 
 const GADS_CONVERSION_ID = process.env.NEXT_PUBLIC_GADS_CONVERSION_ID;
-const GADS_CONVERSION_LABEL = process.env.NEXT_PUBLIC_GADS_CONVERSION_LABEL;
+const GADS_FORM_LABEL = process.env.NEXT_PUBLIC_GADS_FORM_LABEL;
+const GADS_WHATSAPP_LABEL = process.env.NEXT_PUBLIC_GADS_WHATSAPP_LABEL;
+
+const labelByEvent: Record<ConversionEvent, string | undefined> = {
+  form_submit: GADS_FORM_LABEL,
+  whatsapp_click: GADS_WHATSAPP_LABEL,
+};
+
+const valueByEvent: Record<ConversionEvent, number> = {
+  form_submit: 500,
+  whatsapp_click: 200,
+};
 
 export function trackConversion(event: ConversionEvent, value?: number): void {
   if (typeof window === "undefined" || !window.gtag) return;
 
+  const eventValue = value ?? valueByEvent[event];
+
   window.gtag("event", event, {
     event_category: "lead",
     event_label: event,
-    value: value ?? 1,
+    value: eventValue,
   });
 
-  if (GADS_CONVERSION_ID && GADS_CONVERSION_LABEL) {
+  const label = labelByEvent[event];
+  if (GADS_CONVERSION_ID && label) {
     window.gtag("event", "conversion", {
-      send_to: `${GADS_CONVERSION_ID}/${GADS_CONVERSION_LABEL}`,
-      value: value ?? 1,
+      send_to: `${GADS_CONVERSION_ID}/${label}`,
+      value: eventValue,
       currency: "MXN",
     });
   }
