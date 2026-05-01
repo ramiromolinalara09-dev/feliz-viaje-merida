@@ -28,20 +28,12 @@ const valueByEvent: Record<ConversionEvent, number> = {
 export function trackConversion(event: ConversionEvent, value?: number): void {
   if (typeof window === "undefined" || !window.gtag) return;
 
-  const eventValue = value ?? valueByEvent[event];
-
-  window.gtag("event", event, {
-    event_category: "lead",
-    event_label: event,
-    value: eventValue,
-  });
-
   const label = labelByEvent[event];
-  if (GADS_CONVERSION_ID && label) {
-    window.gtag("event", "conversion", {
-      send_to: `${GADS_CONVERSION_ID}/${label}`,
-      value: eventValue,
-      currency: "MXN",
-    });
-  }
+  if (!GADS_CONVERSION_ID || !label) return;
+
+  window.gtag("event", "conversion", {
+    send_to: `${GADS_CONVERSION_ID}/${label}`,
+    value: value ?? valueByEvent[event],
+    currency: "MXN",
+  });
 }
