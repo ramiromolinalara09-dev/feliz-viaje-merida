@@ -23,8 +23,17 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand & Description */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-block mb-4">
-              <Image src="/logo.png" alt="Feliz Viaje Mérida" width={160} height={48} className="h-12 w-auto" />
+            <Link
+              href="/"
+              className="inline-flex items-center justify-center w-20 h-20 bg-white rounded-full shadow-md mb-4 p-3"
+            >
+              <Image
+                src="/logo.png"
+                alt="Feliz Viaje Mérida"
+                width={160}
+                height={48}
+                className="w-full h-auto object-contain"
+              />
             </Link>
             <p className="text-secondary-foreground/80 text-sm mb-6">
               Tu agencia de viajes de confianza en Mérida. Te ayudamos a planear el viaje de tus sueños con acompañamiento personalizado.

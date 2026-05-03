@@ -20,9 +20,15 @@ export function HeroSection() {
 
       <div className="container relative z-10 py-12 lg:py-20">
         <div className="max-w-3xl mx-auto text-center text-white">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-6 py-3 bg-white rounded-2xl shadow-medium mb-6">
-            <Image src="/logo.png" alt="Feliz Viaje Mérida" width={240} height={96} className="h-20 lg:h-24 w-auto" />
+          {/* Logo badge */}
+          <div className="inline-flex items-center justify-center w-32 h-32 lg:w-40 lg:h-40 bg-white rounded-full shadow-medium mb-6 p-4">
+            <Image
+              src="/logo.png"
+              alt="Feliz Viaje Mérida"
+              width={240}
+              height={96}
+              className="w-full h-auto object-contain"
+            />
           </div>
 
           {/* H1 */}
