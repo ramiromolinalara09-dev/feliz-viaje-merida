@@ -1,14 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import {
   MessageCircle,
-  ArrowRight,
-  Check,
-  X,
-  Users,
-  Heart,
+  ArrowDown,
   Briefcase,
   MapPin,
   Clock,
@@ -17,6 +12,9 @@ import {
   Hotel,
   Camera,
   Utensils,
+  Star,
+  HeartHandshake,
+  ShieldCheck,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -27,44 +25,65 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { WHATSAPP_LINK_WITH_MESSAGE } from "@/lib/constants";
+import { WHATSAPP_LINK_WITH_MESSAGE, whatsappLinkForPackage } from "@/lib/constants";
+import { trackConversion } from "@/lib/conversion";
+import { InlineContactForm } from "@/components/forms/inline-contact-form";
 import allPackages from "@/data/packages.json";
 
 const europePackages = allPackages.filter((p: any) => p.continent === "europa");
 
-const forWhom = [
+const heroBullets = [
+  { icon: Star, text: "+500 viajeros felices" },
+  { icon: Briefcase, text: "13 años de experiencia organizando viajes" },
+  { icon: MessageCircle, text: "Respuesta en menos de 1 hora hábil" },
+];
+
+const process = [
   {
-    icon: Users,
-    title: "Primera vez en Europa",
+    step: "1",
+    title: "Cotiza por WhatsApp",
     description:
-      "Te guiamos paso a paso para que tu primer viaje internacional sea perfecto.",
+      "Mándanos un mensaje y te enviamos opciones que se adecúen a ti en menos de 1 hora hábil.",
   },
   {
-    icon: Heart,
-    title: "Viaje de luna de miel",
+    step: "2",
+    title: "Personalizamos tu itinerario",
     description:
-      "Diseñamos itinerarios románticos con detalles especiales para parejas.",
+      "Ajustamos ciudades, duración, hoteles y experiencias a tu presupuesto y a lo que tú quieres vivir.",
   },
   {
-    icon: Briefcase,
-    title: "Presupuesto controlado",
+    step: "3",
+    title: "Apartas tu lugar",
     description:
-      "Optimizamos cada peso para que viajes más por menos dinero.",
+      "Aseguras tu reservación con un anticipo. El resto lo terminas de pagar antes del viaje, con opción a meses sin intereses.",
+  },
+  {
+    step: "4",
+    title: "Te acompañamos antes y durante",
+    description:
+      "Te ayudamos con visas, seguros y documentos. Y mientras viajas tienes soporte por WhatsApp 24/7 si pasa algo.",
   },
 ];
 
-const comparison = [
-  { feature: "Acceso a promociones exclusivas", solo: false, agency: true },
-  { feature: "Soporte 24/7 durante el viaje", solo: false, agency: true },
-  { feature: "Itinerario personalizado", solo: false, agency: true },
+const guarantees = [
   {
-    feature: "Asistencia con visas y documentos",
-    solo: false,
-    agency: true,
+    icon: HeartHandshake,
+    title: "Asesoría sin compromiso",
+    description:
+      "Nos cuentas qué buscas y te armamos opciones gratis. Si no te convence, no pasa nada.",
   },
-  { feature: "Reservaciones garantizadas", solo: false, agency: true },
-  { feature: "Horas de investigación", solo: true, agency: false },
-  { feature: "Riesgo de errores costosos", solo: true, agency: false },
+  {
+    icon: ShieldCheck,
+    title: "Mejor precio garantizado",
+    description:
+      "Trabajamos directo con mayoristas. Si encuentras el mismo paquete más barato, te lo igualamos.",
+  },
+  {
+    icon: Star,
+    title: "Acompañamiento real, no chatbot",
+    description:
+      "Hablas con personas reales que conocen Europa, no con un menú automatizado.",
+  },
 ];
 
 const faqs = [
@@ -149,13 +168,14 @@ export function ViajeEuropaClient() {
               <span className="text-warning font-bold">$39,900 MXN</span> con
               vuelos, hoteles y acompañamiento personalizado
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
               <Button
                 render={
                   <a
                     href={WHATSAPP_LINK_WITH_MESSAGE}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackConversion("whatsapp_click")}
                   />
                 }
                 size="lg"
@@ -165,13 +185,24 @@ export function ViajeEuropaClient() {
                 Cotizar por WhatsApp
               </Button>
               <Button
-                render={<Link href="/contacto" />}
+                render={<a href="#paquetes" />}
                 size="lg"
                 variant="outline"
-                className="w-full sm:w-auto border-white/30 bg-white/10 text-white hover:bg-white/20 h-14 px-8"
+                className="w-full sm:w-auto border-white/30 bg-white/10 text-white hover:bg-white/20 h-14 px-8 gap-2"
               >
-                Enviar formulario
+                Ver paquetes <ArrowDown className="h-4 w-4" />
               </Button>
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-white/85">
+              {heroBullets.map((bullet) => (
+                <span
+                  key={bullet.text}
+                  className="flex items-center gap-1.5"
+                >
+                  <bullet.icon className="h-4 w-4 text-warning" />
+                  {bullet.text}
+                </span>
+              ))}
             </div>
           </div>
         </div>
@@ -197,7 +228,7 @@ export function ViajeEuropaClient() {
       </section>
 
       {/* Packages */}
-      <section className="py-16 lg:py-24">
+      <section id="paquetes" className="py-16 lg:py-24 scroll-mt-20">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -247,9 +278,10 @@ export function ViajeEuropaClient() {
                     <Button
                       render={
                         <a
-                          href={WHATSAPP_LINK_WITH_MESSAGE}
+                          href={whatsappLinkForPackage(pkg.title)}
                           target="_blank"
                           rel="noopener noreferrer"
+                          onClick={() => trackConversion("whatsapp_click")}
                         />
                       }
                       className="flex-1 bg-gradient-primary gap-2"
@@ -264,71 +296,57 @@ export function ViajeEuropaClient() {
         </div>
       </section>
 
-      {/* For whom */}
+      {/* Process — Así funciona, paso por paso */}
       <section className="py-16 lg:py-24 bg-muted/30">
-        <div className="container">
+        <div className="container max-w-5xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              ¿Para quién es este viaje?
+              Así funciona, paso por paso
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Diseñamos experiencias para diferentes tipos de viajeros
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Sin formularios largos. Sin cotizaciones que tardan días.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {forWhom.map((item, index) => (
-              <Card
-                key={index}
-                className="text-center p-8 hover:shadow-medium transition-all"
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {process.map((step) => (
+              <div
+                key={step.step}
+                className="relative rounded-2xl border bg-card p-6 shadow-soft"
               >
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <item.icon className="h-8 w-8 text-primary" />
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-primary text-white text-xl font-bold">
+                  {step.step}
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-muted-foreground">{item.description}</p>
-              </Card>
+                <h3 className="mb-2 text-lg font-semibold">{step.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {step.description}
+                </p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Comparison */}
+      {/* Guarantees — Nuestras promesas */}
       <section className="py-16 lg:py-24">
-        <div className="container">
+        <div className="container max-w-5xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              ¿Por qué con agencia?
+              Nuestras promesas, en blanco y negro
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Compara viajar solo vs. con nuestro acompañamiento
-            </p>
           </div>
-          <div className="max-w-2xl mx-auto">
-            <div className="grid grid-cols-3 gap-4 mb-4 text-center font-semibold">
-              <div></div>
-              <div className="text-muted-foreground">Por tu cuenta</div>
-              <div className="text-primary">Con agencia</div>
-            </div>
-            {comparison.map((row, index) => (
+          <div className="grid gap-6 md:grid-cols-3">
+            {guarantees.map((g) => (
               <div
-                key={index}
-                className="grid grid-cols-3 gap-4 py-3 border-b items-center"
+                key={g.title}
+                className="rounded-2xl border bg-card p-6 shadow-soft text-center"
               >
-                <div className="text-sm">{row.feature}</div>
-                <div className="text-center">
-                  {row.solo ? (
-                    <Check className="h-5 w-5 text-red-500 mx-auto" />
-                  ) : (
-                    <X className="h-5 w-5 text-muted-foreground mx-auto" />
-                  )}
+                <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-warning/15">
+                  <g.icon className="h-7 w-7 text-warning-foreground" />
                 </div>
-                <div className="text-center">
-                  {row.agency ? (
-                    <Check className="h-5 w-5 text-primary mx-auto" />
-                  ) : (
-                    <X className="h-5 w-5 text-muted-foreground mx-auto" />
-                  )}
-                </div>
+                <h3 className="mb-2 text-lg font-semibold">{g.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {g.description}
+                </p>
               </div>
             ))}
           </div>
@@ -364,6 +382,27 @@ export function ViajeEuropaClient() {
         </div>
       </section>
 
+      {/* Inline contact form */}
+      <section id="contacto" className="py-16 lg:py-20 scroll-mt-20">
+        <div className="container max-w-3xl">
+          <div className="text-center mb-10">
+            <Badge className="mb-4 bg-primary/10 text-primary border-0 px-3 py-1">
+              ¿Prefieres formulario?
+            </Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              Déjanos tus datos y te llamamos nosotros
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Te contactamos en menos de 1 hora hábil con opciones reales.
+            </p>
+          </div>
+          <InlineContactForm
+            origen="lp-europa-todo-incluido"
+            servicioPrellenado="Viaje a Europa"
+          />
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 lg:py-24 bg-gradient-to-br from-secondary to-primary text-white">
         <div className="container text-center">
@@ -373,27 +412,20 @@ export function ViajeEuropaClient() {
           <p className="text-xl text-white/80 mb-8">
             Escríbenos y comienza a planear tu viaje hoy
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex justify-center">
             <Button
               render={
                 <a
                   href={WHATSAPP_LINK_WITH_MESSAGE}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackConversion("whatsapp_click")}
                 />
               }
               size="lg"
               className="bg-warning text-warning-foreground hover:bg-warning/90 h-14 px-8 gap-2"
             >
               <MessageCircle className="h-5 w-5" /> Enviar WhatsApp
-            </Button>
-            <Button
-              render={<Link href="/contacto" />}
-              size="lg"
-              variant="outline"
-              className="border-white/30 bg-white/10 text-white hover:bg-white/20 h-14 px-8"
-            >
-              Ir a Contacto
             </Button>
           </div>
         </div>
