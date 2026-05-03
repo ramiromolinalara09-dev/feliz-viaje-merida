@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { MessageCircle, MapPin, Award, Plane, Globe } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { WHATSAPP_LINK_WITH_MESSAGE, SITE_NAME } from "@/lib/constants";
+import { SITE_NAME } from "@/lib/constants";
+import { TrackedWhatsAppButton } from "@/components/analytics/tracked-whatsapp-button";
 
 export const metadata: Metadata = {
   title: `Nosotros`,
@@ -172,19 +172,12 @@ export default function NosotrosPage() {
           <p className="text-xl text-white/80 mb-8">
             Escríbenos y cuéntanos sobre el viaje de tus sueños
           </p>
-          <Button
-            render={
-              <a
-                href={WHATSAPP_LINK_WITH_MESSAGE}
-                target="_blank"
-                rel="noopener noreferrer"
-              />
-            }
+          <TrackedWhatsAppButton
             size="lg"
             className="bg-warning text-warning-foreground hover:bg-warning/90 h-14 px-8 gap-2"
           >
             <MessageCircle className="h-5 w-5" /> Enviar WhatsApp
-          </Button>
+          </TrackedWhatsAppButton>
         </div>
       </section>
     </>

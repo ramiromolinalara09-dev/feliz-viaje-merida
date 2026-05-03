@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { MessageCircle, ArrowRight, Clock, MapPin } from "lucide-react";
@@ -5,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { WHATSAPP_LINK_WITH_MESSAGE } from "@/lib/constants";
+import { trackConversion } from "@/lib/conversion";
 import allPackages from "@/data/packages.json";
 
 // Show up to 6 featured packages (one per continent, then fill with cheapest)
@@ -107,7 +110,7 @@ export function PackagesSection() {
                 </div>
 
                 <div className="flex gap-3">
-                  <Button render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" />} size="sm" className="flex-1 bg-gradient-primary gap-2">
+                  <Button render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" onClick={() => trackConversion("whatsapp_click")} />} size="sm" className="flex-1 bg-gradient-primary gap-2">
                     <MessageCircle className="h-4 w-4" />
                     WhatsApp
                   </Button>

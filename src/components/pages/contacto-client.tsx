@@ -11,6 +11,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { toast } from "sonner";
 import { WHATSAPP_LINK_WITH_MESSAGE, PHONE_DISPLAY, EMAIL, ADDRESS, HOURS, SERVICES } from "@/lib/constants";
+import { trackConversion } from "@/lib/conversion";
 
 export function ContactoClient() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -97,7 +98,7 @@ export function ContactoClient() {
               <p className="text-primary-foreground/80">Respuesta inmediata &bull; Atención personalizada</p>
             </div>
             <Button
-              render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" />}
+              render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" onClick={() => trackConversion("whatsapp_click")} />}
               size="lg"
               className="bg-white text-primary hover:bg-warning hover:text-warning-foreground gap-2 shadow-medium"
             >
@@ -129,7 +130,7 @@ export function ContactoClient() {
                         Hemos recibido tu mensaje. Nos pondremos en contacto contigo lo antes posible.
                       </p>
                       <Button
-                        render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" />}
+                        render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" onClick={() => trackConversion("whatsapp_click")} />}
                         className="gap-2"
                       >
                         <MessageCircle className="h-4 w-4" />
@@ -238,6 +239,7 @@ export function ContactoClient() {
                     href={WHATSAPP_LINK_WITH_MESSAGE}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackConversion("whatsapp_click")}
                     className="flex items-start gap-4 p-4 rounded-lg bg-muted/50 hover:bg-primary/5 transition-colors"
                   >
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -326,7 +328,7 @@ export function ContactoClient() {
         <div className="container text-center">
           <p className="text-muted-foreground mb-4">¿Prefieres una respuesta inmediata?</p>
           <Button
-            render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" />}
+            render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" onClick={() => trackConversion("whatsapp_click")} />}
             size="lg"
             className="bg-gradient-primary gap-2"
           >

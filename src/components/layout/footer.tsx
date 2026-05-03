@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
@@ -12,6 +14,7 @@ import {
   NAV_LINKS,
   SITE_NAME,
 } from "@/lib/constants";
+import { trackConversion } from "@/lib/conversion";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -38,7 +41,7 @@ export function Footer() {
             <p className="text-secondary-foreground/80 text-sm mb-6">
               Tu agencia de viajes de confianza en Mérida. Te ayudamos a planear el viaje de tus sueños con acompañamiento personalizado.
             </p>
-            <Button render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" />} variant="secondary" className="bg-white text-secondary hover:bg-warning hover:text-secondary gap-2">
+            <Button render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" onClick={() => trackConversion("whatsapp_click")} />} variant="secondary" className="bg-white text-secondary hover:bg-warning hover:text-secondary gap-2">
               <MessageCircle className="h-4 w-4" />
               Enviar WhatsApp
             </Button>
@@ -70,6 +73,7 @@ export function Footer() {
                   href={WHATSAPP_LINK_WITH_MESSAGE}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackConversion("whatsapp_click")}
                   className="flex items-start gap-3 text-sm text-secondary-foreground/80 hover:text-warning transition-colors"
                 >
                   <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />

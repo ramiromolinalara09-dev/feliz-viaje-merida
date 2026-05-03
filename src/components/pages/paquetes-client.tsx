@@ -14,6 +14,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { WHATSAPP_LINK_WITH_MESSAGE } from "@/lib/constants";
+import { trackConversion } from "@/lib/conversion";
 import allPackages from "@/data/packages.json";
 
 const CONTINENT_LABELS: Record<string, string> = {
@@ -182,7 +183,7 @@ export function PaquetesClient() {
                     <div className="mb-4" />
                     <div className="flex gap-3">
                       <Button
-                        render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" />}
+                        render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" onClick={() => trackConversion("whatsapp_click")} />}
                         size="sm"
                         className="flex-1 bg-gradient-primary gap-2"
                       >
@@ -209,7 +210,7 @@ export function PaquetesClient() {
               ¿Buscas un hotel todo incluido en playa? Tenemos opciones en Cancún, Riviera Maya, Los Cabos y más destinos nacionales e internacionales. Escríbenos para cotizar.
             </p>
             <Button
-              render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" />}
+              render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" onClick={() => trackConversion("whatsapp_click")} />}
               size="lg"
               className="bg-gradient-primary gap-2"
             >
@@ -229,7 +230,7 @@ export function PaquetesClient() {
             Diseñamos paquetes personalizados según tus preferencias.
           </p>
           <Button
-            render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" />}
+            render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" onClick={() => trackConversion("whatsapp_click")} />}
             size="lg"
             className="bg-warning text-warning-foreground hover:bg-warning/90 gap-2"
           >

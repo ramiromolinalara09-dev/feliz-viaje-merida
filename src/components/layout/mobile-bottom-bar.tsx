@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import { MessageCircle, Mail } from "lucide-react";
 import { WHATSAPP_LINK_WITH_MESSAGE } from "@/lib/constants";
+import { trackConversion } from "@/lib/conversion";
 
 export function MobileBottomBar() {
   return (
@@ -11,6 +14,7 @@ export function MobileBottomBar() {
           href={WHATSAPP_LINK_WITH_MESSAGE}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackConversion("whatsapp_click")}
           className="flex-1 flex items-center justify-center gap-2 py-3 bg-primary text-primary-foreground font-medium"
         >
           <MessageCircle className="h-5 w-5" />

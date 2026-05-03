@@ -9,6 +9,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { WHATSAPP_LINK_WITH_MESSAGE } from "@/lib/constants";
+import { trackConversion } from "@/lib/conversion";
 
 const faqs = [
   {
@@ -71,7 +72,7 @@ export function FAQSection() {
             <p className="text-muted-foreground mb-4">
               ¿Tienes más preguntas? Escríbenos por WhatsApp
             </p>
-            <Button render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" />} size="lg" className="bg-gradient-primary gap-2">
+            <Button render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" onClick={() => trackConversion("whatsapp_click")} />} size="lg" className="bg-gradient-primary gap-2">
               <MessageCircle className="h-5 w-5" />
               Enviar WhatsApp
             </Button>

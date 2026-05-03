@@ -1,8 +1,11 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { MessageCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { WHATSAPP_LINK_WITH_MESSAGE } from "@/lib/constants";
+import { trackConversion } from "@/lib/conversion";
 
 export function HeroSection() {
   return (
@@ -48,7 +51,7 @@ export function HeroSection() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
             <Button
-              render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" />}
+              render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" onClick={() => trackConversion("whatsapp_click")} />}
               size="lg"
               className="w-full sm:w-auto bg-warning text-warning-foreground hover:bg-warning/90 shadow-strong text-lg h-14 px-8 gap-2"
             >

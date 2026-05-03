@@ -8,6 +8,7 @@ import { Menu, X, Phone, Mail, Clock, Plane, Package, Ship, BookOpen, Users, Mes
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { NAV_LINKS, WHATSAPP_LINK_WITH_MESSAGE, PHONE_DISPLAY, EMAIL, HOURS } from "@/lib/constants";
+import { trackConversion } from "@/lib/conversion";
 import { cn } from "@/lib/utils";
 
 const iconMap = {
@@ -79,7 +80,7 @@ export function Header() {
 
           {/* CTA Button - Desktop */}
           <div className="hidden lg:flex items-center gap-3">
-            <Button render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" />} size="lg" className="bg-gradient-primary hover:opacity-90 shadow-medium gap-2">
+            <Button render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" onClick={() => trackConversion("whatsapp_click")} />} size="lg" className="bg-gradient-primary hover:opacity-90 shadow-medium gap-2">
               <MessageCircle className="h-5 w-5" />
               WhatsApp
             </Button>
@@ -142,7 +143,7 @@ export function Header() {
 
                 {/* Mobile CTA */}
                 <div className="p-4 border-t">
-                  <Button render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" />} size="lg" className="w-full bg-gradient-primary gap-2">
+                  <Button render={<a href={WHATSAPP_LINK_WITH_MESSAGE} target="_blank" rel="noopener noreferrer" onClick={() => trackConversion("whatsapp_click")} />} size="lg" className="w-full bg-gradient-primary gap-2">
                     <MessageCircle className="h-5 w-5" />
                     Enviar WhatsApp
                   </Button>

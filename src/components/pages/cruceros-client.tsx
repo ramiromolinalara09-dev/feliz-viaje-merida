@@ -26,6 +26,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { WHATSAPP_LINK_WITH_MESSAGE } from "@/lib/constants";
+import { trackConversion } from "@/lib/conversion";
 
 const cruiseTypes = [
   {
@@ -246,6 +247,7 @@ export function CrucerosClient() {
                         href={WHATSAPP_LINK_WITH_MESSAGE}
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => trackConversion("whatsapp_click")}
                       />
                     }
                     className="w-full bg-gradient-primary gap-2"
@@ -330,6 +332,7 @@ export function CrucerosClient() {
                 href={WHATSAPP_LINK_WITH_MESSAGE}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackConversion("whatsapp_click")}
               />
             }
             size="lg"

@@ -1,5 +1,8 @@
+"use client";
+
 import { MessageCircle } from "lucide-react";
 import { WHATSAPP_LINK_WITH_MESSAGE } from "@/lib/constants";
+import { trackConversion } from "@/lib/conversion";
 import { cn } from "@/lib/utils";
 
 export function WhatsAppButton({ className }: { className?: string }) {
@@ -8,6 +11,7 @@ export function WhatsAppButton({ className }: { className?: string }) {
       href={WHATSAPP_LINK_WITH_MESSAGE}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackConversion("whatsapp_click")}
       className={cn(
         "fixed bottom-20 lg:bottom-6 right-4 lg:right-6 z-50",
         "flex items-center justify-center",
