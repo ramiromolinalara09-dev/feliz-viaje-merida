@@ -1,49 +1,34 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Image from "next/image";
-import { MessageCircle, MapPin, Clock, Filter, X, Hotel } from "lucide-react";
+import { MessageCircle, MapPin, Clock, Hotel } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { WHATSAPP_LINK_WITH_MESSAGE } from "@/lib/constants";
 import { trackConversion } from "@/lib/conversion";
 import allPackages from "@/data/packages.json";
-
-const CONTINENT_LABELS: Record<string, string> = {
-  europa: "Europa",
-  asia: "Asia",
-  "medio-oriente": "Medio Oriente",
-  america: "América",
-};
-
-// Get unique values for filters
-const continents = [...new Set(allPackages.map((p: any) => p.continent).filter(Boolean))];
-const departureCities = [...new Set(allPackages.map((p: any) => p.departureCity).filter(Boolean))];
+import {
+  PackageFilters,
+  DEFAULT_FILTER_VALUES,
+  CONTINENT_LABELS,
+  applyPackageFilters,
+  type FilterValues,
+} from "@/components/packages/package-filters";
 
 export function PaquetesClient() {
-  const [continentFilter, setContinentFilter] = useState<string>("all");
-  const [cityFilter, setCityFilter] = useState<string>("all");
+  const [filterValues, setFilterValues] = useState<FilterValues>(DEFAULT_FILTER_VALUES);
 
-  const filteredPackages = allPackages.filter((pkg: any) => {
-    if (continentFilter !== "all" && pkg.continent !== continentFilter) return false;
-    if (cityFilter !== "all" && pkg.departureCity !== cityFilter) return false;
-    return true;
-  });
+  const filteredPackages = useMemo(
+    () => applyPackageFilters(allPackages, filterValues),
+    [filterValues],
+  );
 
-  const clearFilters = () => {
-    setContinentFilter("all");
-    setCityFilter("all");
-  };
+  const clearFilters = () => setFilterValues(DEFAULT_FILTER_VALUES);
 
-  const hasFilters = continentFilter !== "all" || cityFilter !== "all";
+  const hasFilters =
+    filterValues.continent !== "all" || filterValues.departureCity !== "all";
 
   return (
     <>
@@ -71,52 +56,12 @@ export function PaquetesClient() {
       {allPackages.length > 0 && (
         <section className="py-6 border-b bg-background sticky top-16 lg:top-[104px] z-30">
           <div className="container">
-            <div className="flex flex-wrap items-center gap-4">
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Filter className="h-4 w-4" />
-                <span className="text-sm font-medium">Filtrar:</span>
-              </div>
-
-              <Select value={continentFilter} onValueChange={(v) => setContinentFilter(v ?? "all")}>
-                <SelectTrigger className="w-[180px]">
-                  <SelectValue placeholder="Continente" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">Todos los destinos</SelectItem>
-                  {continents.map((c: any) => (
-                    <SelectItem key={c} value={c}>
-                      {CONTINENT_LABELS[c] || c}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-
-              {departureCities.length > 0 && (
-                <Select value={cityFilter} onValueChange={(v) => setCityFilter(v ?? "all")}>
-                  <SelectTrigger className="w-[180px]">
-                    <SelectValue placeholder="Ciudad de salida" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all">Todas las salidas</SelectItem>
-                    {departureCities.map((c: any) => (
-                      <SelectItem key={c} value={c}>
-                        {c}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              )}
-
-              {hasFilters && (
-                <Button variant="ghost" size="sm" onClick={clearFilters} className="gap-1">
-                  <X className="h-4 w-4" /> Limpiar
-                </Button>
-              )}
-
-              <span className="ml-auto text-sm text-muted-foreground">
-                {filteredPackages.length} paquete{filteredPackages.length !== 1 ? "s" : ""}
-              </span>
-            </div>
+            <PackageFilters
+              packages={allPackages}
+              enabled={["continent", "departureCity"]}
+              values={filterValues}
+              onChange={setFilterValues}
+            />
           </div>
         </section>
       )}

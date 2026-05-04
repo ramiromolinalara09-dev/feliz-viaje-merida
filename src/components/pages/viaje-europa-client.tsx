@@ -1,5 +1,6 @@
 "use client";
 
+import { useMemo, useState } from "react";
 import Image from "next/image";
 import {
   MessageCircle,
@@ -29,8 +30,12 @@ import { WHATSAPP_LINK_WITH_MESSAGE, whatsappLinkForPackage } from "@/lib/consta
 import { trackConversion } from "@/lib/conversion";
 import { InlineContactForm } from "@/components/forms/inline-contact-form";
 import allPackages from "@/data/packages.json";
-
-const europePackages = allPackages.filter((p: any) => p.continent === "europa");
+import {
+  PackageFilters,
+  DEFAULT_FILTER_VALUES,
+  applyPackageFilters,
+  type FilterValues,
+} from "@/components/packages/package-filters";
 
 const heroBullets = [
   { icon: Star, text: "+500 viajeros felices" },
@@ -139,6 +144,18 @@ const includes = [
 ];
 
 export function ViajeEuropaClient() {
+  const europePackages = useMemo(
+    () => allPackages.filter((p: any) => p.continent === "europa"),
+    [],
+  );
+  const [filterValues, setFilterValues] = useState<FilterValues>(DEFAULT_FILTER_VALUES);
+  const filteredPackages = useMemo(
+    () => applyPackageFilters(europePackages, filterValues),
+    [europePackages, filterValues],
+  );
+  const hasActiveFilter =
+    filterValues.departureCity !== "all" || filterValues.country !== "all";
+
   return (
     <>
       {/* Hero */}
@@ -230,7 +247,7 @@ export function ViajeEuropaClient() {
       {/* Packages */}
       <section id="paquetes" className="py-16 lg:py-24 scroll-mt-20">
         <div className="container">
-          <div className="text-center mb-12">
+          <div className="text-center mb-10">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Paquetes a Europa
             </h2>
@@ -239,60 +256,82 @@ export function ViajeEuropaClient() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {europePackages.map((pkg: any) => (
-              <Card
-                key={pkg.id}
-                className="overflow-hidden group hover:shadow-strong transition-all"
-              >
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <Image
-                    src={pkg.flyerImage}
-                    alt={pkg.title}
-                    fill
-                    className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                  {pkg.departureCity && (
-                    <Badge className="absolute top-4 left-4 bg-secondary text-secondary-foreground z-10">
-                      Desde {pkg.departureCity}
-                    </Badge>
-                  )}
-                  <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-4 z-10">
-                    <p className="text-white text-2xl font-bold">Desde ${pkg.price?.toLocaleString()} {pkg.currency}</p>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{pkg.title}</h3>
-                  <p className="text-muted-foreground mb-2 flex items-center gap-2">
-                    <MapPin className="h-4 w-4 flex-shrink-0" />
-                    <span className="truncate">
-                      {Array.isArray(pkg.destinations) ? pkg.destinations.slice(0, 4).join(", ") : pkg.destinations}
-                      {Array.isArray(pkg.destinations) && pkg.destinations.length > 4 ? "..." : ""}
-                    </span>
-                  </p>
-                  <p className="text-muted-foreground mb-4 flex items-center gap-2">
-                    <Clock className="h-4 w-4" /> {pkg.duration}
-                  </p>
-                  <div className="flex gap-3">
-                    <Button
-                      render={
-                        <a
-                          href={whatsappLinkForPackage(pkg.title)}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          onClick={() => trackConversion("whatsapp_click")}
-                        />
-                      }
-                      className="flex-1 bg-gradient-primary gap-2"
-                    >
-                      <MessageCircle className="h-4 w-4" /> Cotizar
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="mb-8">
+            <PackageFilters
+              packages={europePackages}
+              enabled={["departureCity", "country"]}
+              values={filterValues}
+              onChange={setFilterValues}
+            />
           </div>
+
+          {filteredPackages.length === 0 ? (
+            <div className="text-center py-16">
+              <p className="text-lg text-muted-foreground mb-4">
+                No encontramos paquetes con esos filtros. Limpia los filtros para ver los {europePackages.length} paquetes a Europa.
+              </p>
+              {hasActiveFilter && (
+                <Button onClick={() => setFilterValues(DEFAULT_FILTER_VALUES)}>
+                  Ver todos los paquetes
+                </Button>
+              )}
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {filteredPackages.map((pkg: any) => (
+                <Card
+                  key={pkg.id}
+                  className="overflow-hidden group hover:shadow-strong transition-all"
+                >
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image
+                      src={pkg.flyerImage}
+                      alt={pkg.title}
+                      fill
+                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                    {pkg.departureCity && (
+                      <Badge className="absolute top-4 left-4 bg-secondary text-secondary-foreground z-10">
+                        Desde {pkg.departureCity}
+                      </Badge>
+                    )}
+                    <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-4 z-10">
+                      <p className="text-white text-2xl font-bold">Desde ${pkg.price?.toLocaleString()} {pkg.currency}</p>
+                    </div>
+                  </div>
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold mb-2">{pkg.title}</h3>
+                    <p className="text-muted-foreground mb-2 flex items-center gap-2">
+                      <MapPin className="h-4 w-4 flex-shrink-0" />
+                      <span className="truncate">
+                        {Array.isArray(pkg.destinations) ? pkg.destinations.slice(0, 4).join(", ") : pkg.destinations}
+                        {Array.isArray(pkg.destinations) && pkg.destinations.length > 4 ? "..." : ""}
+                      </span>
+                    </p>
+                    <p className="text-muted-foreground mb-4 flex items-center gap-2">
+                      <Clock className="h-4 w-4" /> {pkg.duration}
+                    </p>
+                    <div className="flex gap-3">
+                      <Button
+                        render={
+                          <a
+                            href={whatsappLinkForPackage(pkg.title)}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => trackConversion("whatsapp_click")}
+                          />
+                        }
+                        className="flex-1 bg-gradient-primary gap-2"
+                      >
+                        <MessageCircle className="h-4 w-4" /> Cotizar
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
