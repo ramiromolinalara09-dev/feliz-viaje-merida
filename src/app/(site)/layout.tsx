@@ -7,6 +7,7 @@ import { WhatsAppButton } from "@/components/layout/whatsapp-button";
 import { MobileBottomBar } from "@/components/layout/mobile-bottom-bar";
 import { Toaster } from "@/components/ui/sonner";
 import { GoogleTags } from "@/components/analytics/google-tags";
+import { ClarityTags } from "@/components/analytics/clarity-tags";
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from "@/lib/constants";
 
 const inter = Inter({
@@ -39,6 +40,7 @@ export default function RootLayout({
     <html lang="es" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <GoogleTags />
+        <ClarityTags />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
