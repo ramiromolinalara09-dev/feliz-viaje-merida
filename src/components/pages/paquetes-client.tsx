@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { WHATSAPP_LINK_WITH_MESSAGE } from "@/lib/constants";
+import { WorldCupPromoBanner } from "@/components/home/world-cup-promo-banner";
 import { trackConversion } from "@/lib/conversion";
 import allPackages from "@/data/packages.json";
 import {
@@ -51,6 +52,9 @@ export function PaquetesClient() {
           </p>
         </div>
       </section>
+
+      {/* World Cup 2026 Promo Banner */}
+      <WorldCupPromoBanner />
 
       {/* Filters */}
       {allPackages.length > 0 && (

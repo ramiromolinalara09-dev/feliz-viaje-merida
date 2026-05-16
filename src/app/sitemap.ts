@@ -5,6 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "/",
     "/viaje-a-europa-todo-incluido",
+    "/boletos-mundial-2026",
     "/paquetes-de-viaje",
     "/cruceros",
     "/nosotros",
