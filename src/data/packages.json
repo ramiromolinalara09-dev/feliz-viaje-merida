@@ -91,37 +91,6 @@
     "operator": "EMETRAVEL COLOMBIA"
   },
   {
-    "id": "america--salidas-desde-cdmx--brasil-esencial",
-    "title": "Brasil Esencial",
-    "continent": "america",
-    "departureCity": "CDMX",
-    "destinations": [
-      "Río de Janeiro: Maracaná",
-      "Copacabana",
-      "Pan de Azúcar",
-      "Cristo Redentor",
-      "Ipanema",
-      "Sambodromo",
-      "Escaleras de Selarón"
-    ],
-    "countries": [
-      "Brasil"
-    ],
-    "duration": "8D / 6N",
-    "dates": [
-      "18, 25 Ago",
-      "1, 8, 12 Sep",
-      "15, 27 Oct",
-      "12, 19, 26 Nov"
-    ],
-    "price": 28990,
-    "currency": "MXN",
-    "includes": "Vuelo redondo desde CDMX con maleta documentada, hospedaje con desayunos, traslado apto-hotel-apto, city tour por Maracaná (exterior), Sambodromo (exterior), Escaleras de Selarón, Centro Histórico, visita a Cristo Redentor, visita a Pan de Azúcar, hoteles 3 estrellas, guía de habla hispana",
-    "flyerImage": "/packages/flyers/america--salidas-desde-cdmx--brasil-esencial.png",
-    "year": 2026,
-    "operator": "Eme Travel"
-  },
-  {
     "id": "america--salida-desde-cancun--brasil-esencial-cancun",
     "title": "Brasil Esencial desde Cancún",
     "continent": "america",
@@ -211,6 +180,78 @@
     "flyerImage": "/packages/flyers/america--salidas-desde-gdl--brasil-esencial-desde-gdl.png",
     "year": 2026,
     "operator": "Eme Travel"
+  },
+  {
+    "id": "america--salidas-desde-cdmx--brasil-esencial-cdmx",
+    "title": "Brasil Esencial",
+    "continent": "america",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Rio de Janeiro"
+    ],
+    "countries": [
+      "Brasil"
+    ],
+    "duration": "08D / 06N",
+    "dates": [
+      "18 DE AGOSTO / 1 DE SEPTIEMBRE",
+      "15 DE OCTUBRE / 12, 26 DE NOVIEMBRE",
+      "5*, 7* Y 12* DE DICIEMBRE"
+    ],
+    "price": 28990,
+    "currency": "MXN",
+    "includes": "Vuelo redondo desde CDMX con maleta documentada. Hospedaje con desayunos. Traslado apto - hotel - apto. City Tour por Maracaná (Exterior), Sambodromo (Exterior), Escaleras de Selaron, Centro Histórico. Visita a Cristo Redentor. Visita a Pan de Azúcar. Hospedaje en hoteles 3 estrellas. Guía de habla Hispana.",
+    "flyerImage": "/packages/flyers/america--salidas-desde-cdmx--brasil-esencial-cdmx.png",
+    "year": 2026,
+    "operator": "EMETRAVEL BRASIL"
+  },
+  {
+    "id": "america--salidas-desde-cdmx--navidad-en-punta-cana",
+    "title": "Navidad en Punta Cana",
+    "continent": "america",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Punta Cana",
+      "Isla Saona",
+      "Santo Domingo"
+    ],
+    "countries": [
+      "República Dominicana"
+    ],
+    "duration": "7D / 6N",
+    "dates": [
+      "23 DE DICIEMBRE"
+    ],
+    "price": 30999,
+    "currency": "MXN",
+    "includes": "Vuelo México - Santo Domingo/ Punta Cana - México con AEROMEXICO. Traslados aeropuerto - hotel - aeropuerto. Hospedajes en hotel 4* con PLAN TODO INCLUIDO. 6 noches en Punta Cana. Tour a Isla Saona en catamarán y/o lancha rápida.",
+    "flyerImage": "/packages/flyers/america--salidas-desde-cdmx--navidad-en-punta-cana.png",
+    "year": 2026,
+    "operator": "EME TRAVEL"
+  },
+  {
+    "id": "america--salidas-desde-cdmx--punta-cana-saona-y-santo-domingo",
+    "title": "Punta Cana + Saona y Santo Domingo",
+    "continent": "america",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Punta Cana",
+      "Isla Saona",
+      "Santo Domingo"
+    ],
+    "countries": [
+      "República Dominicana"
+    ],
+    "duration": "7D / 6N",
+    "dates": [
+      "4 DE DICIEMBRE 2026"
+    ],
+    "price": 30999,
+    "currency": "MXN",
+    "includes": "Vuelo México - Santo Domingo/ Punta Cana - México con AEROMEXICO. Traslados aeropuerto - hotel - aeropuerto. Hospedajes en hotel 4* con PLAN TODO INCLUIDO. 6 noches en Punta Cana. Tour a Isla Saona en catamarán y/o lancha rápida.",
+    "flyerImage": "/packages/flyers/america--salidas-desde-cdmx--punta-cana-saona-y-santo-domingo.png",
+    "year": 2026,
+    "operator": "EME TRAVEL"
   },
   {
     "id": "america--salidas-desde-cdmx--navidad-en-rio-de-janeiro",
@@ -345,10 +386,35 @@
     "operator": "Eme Travel"
   },
   {
-    "id": "asia--tailandia-al-completo-islas-phi-phi-y-dubai",
-    "title": "Tailandia al Completo, Islas Phi Phi y Dubái",
+    "id": "asia--japon-imprescindible-con-disney",
+    "title": "JAPÓN IMPRESCINDIBLE CON Tokyo Disneyland",
     "continent": "asia",
     "departureCity": "CDMX",
+    "destinations": [
+      "Tokio",
+      "Kioto",
+      "Osaka",
+      "Disneyland Tokio"
+    ],
+    "countries": [
+      "Japón"
+    ],
+    "duration": "11D / 08N",
+    "dates": [
+      "1 DE DICIEMBRE"
+    ],
+    "price": 69900,
+    "currency": "MXN",
+    "includes": "Vuelo redondo directo CDMX-Tokio con Aeroméxico, boleto de tren bala Nozomi, 8 noches de alojamiento (3 en Tokio, 3 en Kioto, 2 en Osaka), traslados, visitas indicadas, guías de habla hispana, entrada a Disneyland Tokio con transporte.",
+    "flyerImage": "/packages/flyers/asia--japon-imprescindible-con-disney.png",
+    "year": 2026,
+    "operator": "Emetravel Japón"
+  },
+  {
+    "id": "asia--tailandia-completo",
+    "title": "TAILANDIA al Completo ISLAS PHI PHI Y DUBÁI",
+    "continent": "asia",
+    "departureCity": null,
     "destinations": [
       "Dubái",
       "Bangkok",
@@ -358,23 +424,24 @@
       "Sukhothai",
       "Chiang Mai",
       "Chiang Rai",
-      "Islas Phi Phi",
+      "Kho Phi Phi",
       "Phuket"
     ],
     "countries": [
-      "EAU",
+      "Emiratos Árabes Unidos",
       "Tailandia"
     ],
-    "duration": "14D / 12N",
+    "duration": "14D/12N",
     "dates": [
-      "2 Dic"
+      "18 DE OCTUBRE",
+      "2 DE DICIEMBRE"
     ],
     "price": 69900,
     "currency": "MXN",
-    "includes": "Vuelo México-Dubái-Bangkok-México clase turista, hospedaje 12 noches con desayuno diario, vuelo Chiang Rai-Phuket-Bangkok clase turista, entradas a templos, excursión a Phi Phi con almuerzo incluido, guía de habla hispana",
-    "flyerImage": "/packages/flyers/asia--tailandia-al-completo-islas-phi-phi-y-dubai.png",
+    "includes": "Vuelos México-Dubái-Bangkok-México y Chiang Rai-Phuket-Bangkok en clase turista, traslados Hotel-Aeropuerto-Hotel, 12 noches de hospedaje con desayuno diario, guías de habla hispana, entradas a templos, visita a santuario de elefantes, excursión de día completo a Islas Phi Phi con almuerzo, visita a la Comunidad de las mujeres de cuello de Jirafa.",
+    "flyerImage": "/packages/flyers/asia--tailandia-completo.png",
     "year": 2026,
-    "operator": "Eme Travel"
+    "operator": "EMETRAVEL ASIA"
   },
   {
     "id": "asia--dubai-y-bali",
@@ -406,6 +473,36 @@
     "flyerImage": "/packages/flyers/asia--dubai-y-bali.png",
     "year": 2026,
     "operator": "Eme Travel"
+  },
+  {
+    "id": "asia--japon-y-tailandia-islas-phi-phi",
+    "title": "Japón y Tailandia + Islas Phi Phi",
+    "continent": "asia",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Tokio",
+      "Nara",
+      "Osaka",
+      "Bangkok",
+      "Chiang Mai",
+      "Chiang Rai",
+      "Phuket",
+      "Koh Phi Phi"
+    ],
+    "countries": [
+      "Japón",
+      "Tailandia"
+    ],
+    "duration": "19D / 16N",
+    "dates": [
+      "23 de Noviembre 2026"
+    ],
+    "price": 79900,
+    "currency": "MXN",
+    "includes": "Vuelo redondo México-Tokio-México con Aeroméxico (maleta 20kg), traslados, alojamiento en hoteles categoría turista con desayuno diario, vuelos internos, tren de alta velocidad Tokio-Osaka-Tokio, comidas y visitas según itinerario, guía de habla hispana.",
+    "flyerImage": "/packages/flyers/asia--japon-y-tailandia-islas-phi-phi.png",
+    "year": 2026,
+    "operator": "EMETRAVEL ASIA"
   },
   {
     "id": "asia--dubai-tailandia-islas-phiphi-singapur-y-malasia",
@@ -472,39 +569,6 @@
     "currency": "MXN",
     "includes": "Boleto de avión México-Seúl-México clase turista con maleta documentada, visitas indicadas, 4 noches Seúl, 2 noches Busan, 3 noches Tokio, 3 noches Osaka, 2 noches Shanghai, 2 noches Xi'an, 3 noches Beijing, vuelo Busan-Tokio, hoteles 4 estrellas",
     "flyerImage": "/packages/flyers/asia--corea-japon-y-china-con-disney.png",
-    "year": 2026,
-    "operator": "Eme Travel"
-  },
-  {
-    "id": "asia--rutas-imperiales-de-asia",
-    "title": "Rutas Imperiales de Asia",
-    "continent": "asia",
-    "departureCity": "CDMX",
-    "destinations": [
-      "Tokio",
-      "Osaka",
-      "Shanghai",
-      "Xi'an",
-      "Beijing",
-      "Hanoi",
-      "Ninh Binh",
-      "Bahía de Halong",
-      "Siem Reap"
-    ],
-    "countries": [
-      "Japón",
-      "China",
-      "Vietnam",
-      "Camboya"
-    ],
-    "duration": "22D / 19N",
-    "dates": [
-      "2 Sep"
-    ],
-    "price": 99000,
-    "currency": "MXN",
-    "includes": "Vuelos redondos México-Tokio-México clase turista con Aeroméxico (maleta documentada), vuelos internos, tren alta velocidad, 3 noches Tokio, 2 noches Osaka, 2 noches Shanghai, 2 noches Xi'an, 3 noches Beijing, 3 noches Vietnam, 2 noches Camboya, hoteles cat. turista 4*, desayuno buffet diario, crucero 2 días Bahía de Halong, guía de habla hispana",
-    "flyerImage": "/packages/flyers/asia--rutas-imperiales-de-asia.png",
     "year": 2026,
     "operator": "Eme Travel"
   },
@@ -625,6 +689,34 @@
     "flyerImage": "/packages/flyers/europa--salidas-desde-mty--madrid-y-paris-con-disney-mty.png",
     "year": 2026,
     "operator": "Eme Travel"
+  },
+  {
+    "id": "europa--salidas-desde-cdmx--navidad-en-paris-con-disney-y-madrid",
+    "title": "Navidad en París con Disneyland París y Madrid",
+    "continent": "europa",
+    "departureCity": "CDMX",
+    "destinations": [
+      "París",
+      "Disneyland París",
+      "Burdeos",
+      "Blois",
+      "San Sebastián",
+      "Madrid"
+    ],
+    "countries": [
+      "Francia",
+      "España"
+    ],
+    "duration": "8D / 6N",
+    "dates": [
+      "19 DE DICIEMBRE 2026"
+    ],
+    "price": 46900,
+    "currency": "MXN",
+    "includes": "Vuelo transatlántico con maleta documentada de 23 kg. Visitas indicadas. Traslados aeropuerto - hotel - aeropuerto. Transporte en autocar turístico para todas las transferencias y visitas programadas. Desayuno diario. Hospedaje en hoteles cat turismo 3*. Guía correo de habla hispana durante todo el recorrido. Guías locales.",
+    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--navidad-en-paris-con-disney-y-madrid.png",
+    "year": 2026,
+    "operator": "EMETRAVEL EUROPA"
   },
   {
     "id": "europa--salidas-desde-mty--italia-y-paris-con-disney-mty",
@@ -1034,40 +1126,6 @@
     "operator": "Eme Travel"
   },
   {
-    "id": "europa--salidas-desde-cdmx--europa-glamurosa",
-    "title": "Europa Glamurosa",
-    "continent": "europa",
-    "departureCity": "CDMX",
-    "destinations": [
-      "España",
-      "Francia",
-      "Alemania",
-      "Suiza",
-      "Países Bajos",
-      "Bélgica",
-      "Italia"
-    ],
-    "countries": [
-      "España",
-      "Francia",
-      "Alemania",
-      "Suiza",
-      "Países Bajos",
-      "Bélgica",
-      "Italia"
-    ],
-    "duration": "18D / 16N",
-    "dates": [
-      "7 May"
-    ],
-    "price": 57000,
-    "currency": "MXN",
-    "includes": "Vuelo transatlántico con maleta 23kg, visitas indicadas, traslados aeropuerto-hotel, autocar turístico, desayuno diario, hoteles cat. turista 3*, guía de habla hispana, guías locales",
-    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--europa-glamurosa.png",
-    "year": 2026,
-    "operator": "Eme Travel"
-  },
-  {
     "id": "europa--salidas-desde-cdmx--ruta-de-los-alpes-con-glaciar-express-2026",
     "title": "Ruta de los Alpes con Glaciar Express",
     "continent": "europa",
@@ -1104,6 +1162,120 @@
     "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--ruta-de-los-alpes-con-glaciar-express-2026.png",
     "year": 2026,
     "operator": "Eme Travel"
+  },
+  {
+    "id": "europa--salidas-desde-gdl--navidad-en-paris-y-ano-nuevo-en-roma-gdl",
+    "title": "Navidad en París y Año Nuevo en Roma",
+    "continent": "europa",
+    "departureCity": "Guadalajara",
+    "destinations": [
+      "Madrid",
+      "Burgos",
+      "Barcelona",
+      "Zaragoza",
+      "Lucerna",
+      "Zurich",
+      "Burdeos",
+      "Blois",
+      "París",
+      "Costa Azul",
+      "Venecia",
+      "Pisa",
+      "Florencia",
+      "Roma"
+    ],
+    "countries": [
+      "España",
+      "Suiza",
+      "Francia",
+      "Italia"
+    ],
+    "duration": "17D / 15N",
+    "dates": [
+      "20 de Diciembre 2026"
+    ],
+    "price": 58900,
+    "currency": "MXN",
+    "includes": "Vuelo transatlántico con maleta documentada 23kg. Visitas indicadas. Traslados aeropuerto - hotel. Traslados en autocar turístico. Desayuno diario. Hospedaje en hoteles cat turista 3*. Guía correo de habla hispana durante todo el recorrido. Guías locales.",
+    "flyerImage": "/packages/flyers/europa--salidas-desde-gdl--navidad-en-paris-y-ano-nuevo-en-roma-gdl.png",
+    "year": 2026,
+    "operator": "EMETRAVEL EUROPA"
+  },
+  {
+    "id": "europa--salidas-desde-mty--navidad-en-barcelona",
+    "title": "Navidad en Barcelona",
+    "continent": "europa",
+    "departureCity": "Monterrey",
+    "destinations": [
+      "Madrid",
+      "Burgos",
+      "Barcelona",
+      "Zaragoza",
+      "Lucerna",
+      "Zurich",
+      "Burdeos",
+      "Blois",
+      "París",
+      "Costa Azul",
+      "Venecia",
+      "Pisa",
+      "Florencia",
+      "Roma"
+    ],
+    "countries": [
+      "España",
+      "Suiza",
+      "Francia",
+      "Italia"
+    ],
+    "duration": "17D / 15N",
+    "dates": [
+      "10 DE DICIEMBRE 2026"
+    ],
+    "price": 58900,
+    "currency": "MXN",
+    "includes": "Vuelo transatlántico (maleta 23kg), visitas, traslados (aeropuerto-hotel y en autocar), desayuno diario, hospedaje en hoteles 3*, guía de habla hispana y guías locales.",
+    "flyerImage": "/packages/flyers/europa--salidas-desde-mty--navidad-en-barcelona.png",
+    "year": 2026,
+    "operator": "EMETRAVEL EUROPA"
+  },
+  {
+    "id": "europa--salidas-desde-cdmx--navidad-en-paris-y-ano-nuevo-en-roma-cdmx",
+    "title": "Navidad en París y Año Nuevo en Roma",
+    "continent": "europa",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Madrid",
+      "Burgos",
+      "Barcelona",
+      "Zaragoza",
+      "Lucerna",
+      "Zurich",
+      "Burdeos",
+      "Blois",
+      "París",
+      "Costa Azul",
+      "Venecia",
+      "Pisa",
+      "Florencia",
+      "Roma"
+    ],
+    "countries": [
+      "España",
+      "Suiza",
+      "Francia",
+      "Italia"
+    ],
+    "duration": "17D / 15N",
+    "dates": [
+      "19 de Diciembre"
+    ],
+    "price": 58900,
+    "currency": "MXN",
+    "includes": "Vuelo transatlántico con maleta documentada 23kg. Visitas indicadas. Traslados aeropuerto - hotel. Traslados en autocar turístico. Desayuno diario. Hospedaje en hoteles cat turista 3*. Guía correo de habla hispana durante todo el recorrido. Guías locales.",
+    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--navidad-en-paris-y-ano-nuevo-en-roma-cdmx.png",
+    "year": 2026,
+    "operator": "EMETRAVEL EUROPA"
   },
   {
     "id": "europa--salidas-desde-cdmx--encantos-de-europa-con-disney",
@@ -1280,7 +1452,7 @@
     "operator": "Eme Travel"
   },
   {
-    "id": "europa--salidas-desde-cdmx--europa-9-naciones-2026",
+    "id": "europa--salidas-desde-cdmx--europa-9-naciones-2026-2",
     "title": "Europa 9 Naciones",
     "continent": "europa",
     "departureCity": "CDMX",
@@ -1305,7 +1477,7 @@
       "Montecarlo"
     ],
     "countries": [
-      "Suíza",
+      "Suiza",
       "Francia",
       "Alemania",
       "España",
@@ -1315,19 +1487,63 @@
       "Inglaterra",
       "Mónaco"
     ],
-    "duration": "19D/17N",
+    "duration": "19D / 17N",
     "dates": [
-      "29** ABR",
-      "1, 8, 12, 15, 19, 22, 27 Y 28 AGO",
-      "5, 9, 19, 23 Y 26 SEP",
-      "3, 9, 17, 24 Y 28 OCT",
-      "7, 14, 21 Y 28 NOV",
-      "2 Y 5 DIC"
+      "8, 15, 19**, 27 AGO",
+      "19 SEP / 3, 9, 17, 24 Y 28** OCT",
+      "7, 14, 21 Y 28 NOV / 2** Y 5 DIC"
     ],
     "price": 63000,
     "currency": "MXN",
-    "includes": "Vuelo transatlántico con maleta documentada 23 kg. Visitas indicadas. Traslado en ferry o tren Londres / París. Traslados aeropuerto - hotel. Transporte en autocar turístico para todas las transferencias y visitas programadas. Desayuno diario. Traslado en Vaporetto. Hospedaje en hoteles cat turista 3 *. Guía correo de habla hispana durante todo el recorrido. Guías locales en lugares indicados.",
-    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--europa-9-naciones-2026.png",
+    "includes": "Vuelo transatlántico con maleta documentada 23 kg. Visitas indicadas. Traslado en ferry o tren Londres / París. Traslados aeropuerto - hotel. Transporte en autocar turístico para todas las transferencias y visitas programadas. Desayuno diario. Traslado en vaporetto. Hospedaje en hoteles cat turista 3*. Guía correo de habla hispana durante todo el recorrido. Guías locales en lugares indicados.",
+    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--europa-9-naciones-2026-2.png",
+    "year": 2026,
+    "operator": "EMETRAVEL EUROPA"
+  },
+  {
+    "id": "europa--salidas-desde-cdmx--navidad-en-roma",
+    "title": "Navidad en ROMA",
+    "continent": "europa",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Lucerna",
+      "Zurich",
+      "Paris",
+      "Niza",
+      "Frankfurt",
+      "Heidelberg",
+      "Madrid",
+      "Barcelona",
+      "Zaragoza",
+      "Padova",
+      "Venecia",
+      "Florencia",
+      "Roma",
+      "Pisa",
+      "Luxemburgo",
+      "Innsbruck",
+      "Londres",
+      "Montecarlo"
+    ],
+    "countries": [
+      "Suiza",
+      "Francia",
+      "Alemania",
+      "España",
+      "Italia",
+      "Luxemburgo",
+      "Austria",
+      "Inglaterra",
+      "Mónaco"
+    ],
+    "duration": "19D / 17N",
+    "dates": [
+      "12 DE DICIEMBRE"
+    ],
+    "price": 63000,
+    "currency": "MXN",
+    "includes": "Vuelo transatlántico con maleta documentada 23kg. Visitas indicadas. Traslados aeropuerto - hotel. Traslados en autocar turístico. Desayuno diario. Hospedaje en hoteles cat turista 3*. Guía correo de habla hispana durante todo el recorrido. Guías locales.",
+    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--navidad-en-roma.png",
     "year": 2026,
     "operator": "EMETRAVEL EUROPA"
   },
@@ -1363,6 +1579,70 @@
     "flyerImage": "/packages/flyers/europa--salidas-desde-mty--verano-con-encantos-de-europa-con-disney-mty.png",
     "year": 2026,
     "operator": "Eme Travel"
+  },
+  {
+    "id": "europa--salidas-desde-cdmx--navidad-en-suiza-con-disney-paris",
+    "title": "Navidad en Suiza con Disneyland Paris",
+    "continent": "europa",
+    "departureCity": "CDMX",
+    "destinations": [
+      "ROMA",
+      "FLORENCIA",
+      "VENECIA",
+      "MILÁN",
+      "LUCERNA",
+      "ZURICH",
+      "PARÍS",
+      "LONDRES"
+    ],
+    "countries": [
+      "ITALIA",
+      "SUIZA",
+      "FRANCIA",
+      "INGLATERRA"
+    ],
+    "duration": "15D / 13N",
+    "dates": [
+      "17 DE DICIEMBRE"
+    ],
+    "price": 64900,
+    "currency": "MXN",
+    "includes": "Vuelo trasatlántico, traslados aeropuerto-hotel y entre ciudades (ferry/tren/autocar), hospedaje en hoteles 3* con desayuno diario, visitas programadas, guía de habla hispana, guías locales, entrada a Disneyland París.",
+    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--navidad-en-suiza-con-disney-paris.png",
+    "year": 2026,
+    "operator": "EMETRAVEL EUROPA"
+  },
+  {
+    "id": "europa--salidas-desde-cdmx--navidad-en-roma-y-nuevo-ano-en-paris-con-disney",
+    "title": "NAVIDAD EN ROMA Y AÑO NUEVO EN PARÍS con Disneyland Paris",
+    "continent": "europa",
+    "departureCity": "CDMX",
+    "destinations": [
+      "ROMA",
+      "FLORENCIA",
+      "VENECIA",
+      "MILÁN",
+      "LUCERNA",
+      "ZURICH",
+      "PARÍS",
+      "LONDRES"
+    ],
+    "countries": [
+      "ITALIA",
+      "SUIZA",
+      "FRANCIA",
+      "INGLATERRA"
+    ],
+    "duration": "15D / 13N",
+    "dates": [
+      "23 DE DICIEMBRE"
+    ],
+    "price": 64900,
+    "currency": "MXN",
+    "includes": "Vuelo trasatlántico México - Roma / Roma - Londres con maleta documentada 23 Kg, visitas indicadas, traslados aeropuerto - hotel, traslado en ferry o tren París - Londres, transporte en autocar turístico, desayuno diario, hospedaje en hoteles categoría turista 3*, guía correo de habla hispana, guías locales, entrada a Disneyland París.",
+    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--navidad-en-roma-y-nuevo-ano-en-paris-con-disney.png",
+    "year": 2026,
+    "operator": "EMETRAVEL EUROPA"
   },
   {
     "id": "europa--salidas-desde-cdmx--auroras-boreales",
@@ -1523,6 +1803,40 @@
     "currency": "MXN",
     "includes": "Vuelo transatlántico México-Estambul / Dubai-México con 1 maleta documentada 22 kg. Visitas indicadas. 5 noches de alojamiento en Estambul (régimen cama & desayuno. 2 noches de alojamiento en Capadocia,1 noche en Pamukkale, 2 noches en Izmir (régimen cama, desayuno y cena). 4 noches de alojamiento en Dubái en régimen cama y desayuno. Traslados y visitas indicadas en autocar turístico.",
     "flyerImage": "/packages/flyers/medio-oriente--turquia-y-dubai-flyer-2026.png",
+    "year": 2026,
+    "operator": "EMETRAVEL EUROPA"
+  },
+  {
+    "id": "medio-oriente--turquia-dubai-grecia-n-2",
+    "title": "TURQUÍA, DUBAI & CRUCERO POR LAS ISLAS GRIEGAS",
+    "continent": "medio-oriente",
+    "departureCity": "CDMX",
+    "destinations": [
+      "ESTAMBUL",
+      "ANKARA",
+      "CAPADOCIA",
+      "PAMUKKALE",
+      "IZMIR",
+      "KUSADASI",
+      "MYKONOS",
+      "PIREO",
+      "SANTORINI",
+      "DUBAI"
+    ],
+    "countries": [
+      "TURQUÍA",
+      "GRECIA",
+      "EAU"
+    ],
+    "duration": "16D / 14N",
+    "dates": [
+      "1 DE AGOSTO",
+      "3 DE OCTUBRE"
+    ],
+    "price": 65000,
+    "currency": "MXN",
+    "includes": "Traslados, vuelo redondo México-Estambul/Dubái-México, alojamiento en hoteles (Estambul, Capadocia, Pamukkale, Kuşadası/Izmir, Dubái) con régimen de comidas especificado, crucero por Grecia (cabina interior Celestyl Cruises), guía profesional de habla hispana, bus de lujo con A/C, entradas a museos, propinas en hoteles y restaurantes, comidas según descriptivo.",
+    "flyerImage": "/packages/flyers/medio-oriente--turquia-dubai-grecia-n-2.png",
     "year": 2026,
     "operator": "EMETRAVEL EUROPA"
   }
