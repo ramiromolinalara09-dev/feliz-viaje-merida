@@ -1,34 +1,5 @@
 [
   {
-    "id": "america--salidas-desde-mty--colombia-esencial-mty",
-    "title": "Colombia Esencial desde Monterrey",
-    "continent": "america",
-    "departureCity": "Monterrey",
-    "destinations": [
-      "Bogotá",
-      "Cartagena",
-      "Medellín",
-      "Guatapé"
-    ],
-    "countries": [
-      "Colombia"
-    ],
-    "duration": "9D / 7N",
-    "dates": [
-      "21 y 23 Jul (suplemento de $1,000)",
-      "18 y 27 Ago",
-      "24 Sep",
-      "11 y 18 Oct",
-      "8, 12, 17 Nov"
-    ],
-    "price": 28500,
-    "currency": "MXN",
-    "includes": "Vuelo redondo directo Monterrey-Bogotá operado con Viva Aerobús, Cartagena-Medellín-Medellín-Bogotá, traslados aeropuerto-hotel-aeropuerto, hospedaje: 3 noches Bogotá, 2 noches Medellín, 3 noches Cartagena, city tour por Cartagena, visita a Guatapé y su Peñol",
-    "flyerImage": "/packages/flyers/america--salidas-desde-mty--colombia-esencial-mty.png",
-    "year": 2026,
-    "operator": "Eme Travel"
-  },
-  {
     "id": "america--salidas-desde-gdl--colombia-esencial-gdl",
     "title": "Colombia Esencial desde Guadalajara",
     "continent": "america",
@@ -87,6 +58,35 @@
     "currency": "MXN",
     "includes": "Vuelos redondos México-Colombia e internos, traslados aeropuerto-hotel, hospedaje en hoteles 4 y 5 estrellas con desayuno, 2 noches en Bogotá, 2 noches en Medellín, 3 noches en Cartagena, y city tour por Cartagena.",
     "flyerImage": "/packages/flyers/america--salidas-desde-cdmx--colombia-esencial-cdmx.png",
+    "year": 2026,
+    "operator": "EMETRAVEL COLOMBIA"
+  },
+  {
+    "id": "america--salidas-desde-mty--colombia-esencial-mty-2-2",
+    "title": "Colombia Esencial",
+    "continent": "america",
+    "departureCity": "Monterrey",
+    "destinations": [
+      "Bogotá",
+      "Cartagena",
+      "Medellín",
+      "Guatapé"
+    ],
+    "countries": [
+      "Colombia"
+    ],
+    "duration": "9D / 7N",
+    "dates": [
+      "27 DE AGOSTO",
+      "24 DE SEPTIEMBRE",
+      "11 Y 18 DE OCTUBRE",
+      "8, 12, 17 DE NOVIEMBRE",
+      "3 Y 6 DE DICIEMBRE"
+    ],
+    "price": 28500,
+    "currency": "MXN",
+    "includes": "Vuelo redondo directo Monterrey - Bogotá operado con Viva Aerobús. Vuelos internos: Cartagena - Medellín - Medellín - Bogotá. Traslados: Aeropuerto - Hotel - Aeropuerto. Hospedaje: 2 noches en Bogotá, 2 noches en Medellín, 3 noches en Cartagena. City tour por Cartagena. Visita a Guatapé y su peñol.",
+    "flyerImage": "/packages/flyers/america--salidas-desde-mty--colombia-esencial-mty-2-2.png",
     "year": 2026,
     "operator": "EMETRAVEL COLOMBIA"
   },
@@ -182,26 +182,35 @@
     "operator": "Eme Travel"
   },
   {
-    "id": "america--salidas-desde-cdmx--brasil-esencial-cdmx",
-    "title": "Brasil Esencial",
+    "id": "america--salidas-desde-cdmx--brasil-esencial",
+    "title": "BRASIL ESENCIAL",
     "continent": "america",
     "departureCity": "CDMX",
     "destinations": [
-      "Rio de Janeiro"
+      "Rio de Janeiro",
+      "Pan de Azúcar",
+      "Maracaná",
+      "Cristo Redentor",
+      "Copacabana",
+      "Ipanema",
+      "Escaleras de Selaron",
+      "Sambódromo",
+      "Centro Histórico"
     ],
     "countries": [
       "Brasil"
     ],
     "duration": "08D / 06N",
     "dates": [
-      "18 DE AGOSTO / 1 DE SEPTIEMBRE",
-      "15 DE OCTUBRE / 12, 26 DE NOVIEMBRE",
+      "18 DE AGOSTO",
+      "15 DE OCTUBRE",
+      "12, 26 DE NOVIEMBRE",
       "5*, 7* Y 12* DE DICIEMBRE"
     ],
     "price": 28990,
     "currency": "MXN",
-    "includes": "Vuelo redondo desde CDMX con maleta documentada. Hospedaje con desayunos. Traslado apto - hotel - apto. City Tour por Maracaná (Exterior), Sambodromo (Exterior), Escaleras de Selaron, Centro Histórico. Visita a Cristo Redentor. Visita a Pan de Azúcar. Hospedaje en hoteles 3 estrellas. Guía de habla Hispana.",
-    "flyerImage": "/packages/flyers/america--salidas-desde-cdmx--brasil-esencial-cdmx.png",
+    "includes": "Vuelo redondo desde CDMX con maleta documentada, hospedaje con desayunos en hoteles 3 estrellas, traslados apto-hotel-apto, City Tour (Maracaná Exterior, Sambódromo Exterior, Escaleras de Selaron, Centro Histórico), visita a Cristo Redentor y Pan de Azúcar, guía de habla hispana.",
+    "flyerImage": "/packages/flyers/america--salidas-desde-cdmx--brasil-esencial.png",
     "year": 2026,
     "operator": "EMETRAVEL BRASIL"
   },
@@ -335,7 +344,7 @@
     "operator": "Eme Travel"
   },
   {
-    "id": "asia--japon-imprescindible",
+    "id": "asia--japon-imprescindible-2",
     "title": "Japón Imprescindible",
     "continent": "asia",
     "departureCity": "CDMX",
@@ -349,41 +358,14 @@
     ],
     "duration": "11D / 8N",
     "dates": [
-      "26 Ago",
-      "24 Sep",
-      "19 Oct",
-      "13, 21 Nov"
+      "24 DE SEPTIEMBRE 2026"
     ],
     "price": 65000,
     "currency": "MXN",
-    "includes": "Vuelo redondo directo CDMX-Tokio con Aeroméxico, boleto tren bala Nozomi clase turista Tokyo-Kyoto / Osaka-Tokyo, 3 noches en Tokyo, 3 noches en Kyoto, 2 noches en Osaka, traslados y visitas indicadas, guía de habla hispana",
-    "flyerImage": "/packages/flyers/asia--japon-imprescindible.png",
+    "includes": "Vuelo redondo directo CDMX-Tokio con Aeroméxico, boleto de tren bala Nozomi, 8 noches de alojamiento (3 en Tokio, 3 en Kioto, 2 en Osaka), traslados, visitas indicadas y guías de habla hispana.",
+    "flyerImage": "/packages/flyers/asia--japon-imprescindible-2.png",
     "year": 2026,
-    "operator": "Eme Travel"
-  },
-  {
-    "id": "asia--fin-de-ano-en-japon-imprescindible",
-    "title": "Fin de Año en Japón Imprescindible",
-    "continent": "asia",
-    "departureCity": "CDMX",
-    "destinations": [
-      "Tokio",
-      "Kioto",
-      "Osaka"
-    ],
-    "countries": [
-      "Japón"
-    ],
-    "duration": "11D / 08N",
-    "dates": [
-      "26, 27 Dic"
-    ],
-    "price": 65000,
-    "currency": "MXN",
-    "includes": "Vuelo redondo directo CDMX-Tokio con Aeroméxico, boleto tren bala Nozomi clase turista, 3 noches Tokyo, 3 noches Kyoto, 2 noches Osaka, traslados y visitas indicadas, guía de habla hispana",
-    "flyerImage": "/packages/flyers/asia--fin-de-ano-en-japon-imprescindible.png",
-    "year": 2026,
-    "operator": "Eme Travel"
+    "operator": "Emetravel Japón"
   },
   {
     "id": "asia--japon-imprescindible-con-disney",
@@ -752,39 +734,6 @@
     "operator": "Eme Travel"
   },
   {
-    "id": "europa--salidas-desde-cdmx--verano-en-italia-y-paris-con-disney",
-    "title": "Verano en Italia y París con Disney",
-    "continent": "europa",
-    "departureCity": "CDMX",
-    "destinations": [
-      "París",
-      "Disneyland",
-      "Ginebra",
-      "Aosta",
-      "Venecia",
-      "Región de Veneto",
-      "Rávera",
-      "Asís",
-      "Roma"
-    ],
-    "countries": [
-      "Francia",
-      "Suiza",
-      "Italia"
-    ],
-    "duration": "10D / 08N",
-    "dates": [
-      "10 Ago",
-      "10 Sep"
-    ],
-    "price": 51900,
-    "currency": "MXN",
-    "includes": "Vuelo transatlántico con maleta documentada, visitas indicadas, traslados, autocar turístico, Vaporetto en Venecia, desayuno diario, entrada a Disneyland París, hoteles cat. turista 3*, guía de habla hispana, guías locales",
-    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--verano-en-italia-y-paris-con-disney.png",
-    "year": 2026,
-    "operator": "Eme Travel"
-  },
-  {
     "id": "europa--salidas-desde-mty--verano-en-italia-y-paris-con-disney-mty",
     "title": "Verano en Italia y París con Disney desde Monterrey",
     "continent": "europa",
@@ -1004,47 +953,6 @@
     "operator": "Eme Travel"
   },
   {
-    "id": "europa--salidas-desde-gdl--europa-clasica-gdl",
-    "title": "Europa Clásica desde Guadalajara",
-    "continent": "europa",
-    "departureCity": "Guadalajara",
-    "destinations": [
-      "Madrid",
-      "Burgos",
-      "Barcelona",
-      "Zaragoza",
-      "Lucerna",
-      "Zurich",
-      "Burdeos",
-      "Blois",
-      "París",
-      "Costa Azul",
-      "Venecia",
-      "Pisa",
-      "Florencia",
-      "Roma"
-    ],
-    "countries": [
-      "España",
-      "Suiza",
-      "Francia",
-      "Italia"
-    ],
-    "duration": "17D / 15N",
-    "dates": [
-      "11 y 12 May",
-      "25 Jul (suplemento de $1,000 MXN)",
-      "17 y 25 Ago",
-      "1 y 5 Nov"
-    ],
-    "price": 55000,
-    "currency": "MXN",
-    "includes": "Vuelo transatlántico con maleta documentada 23kg, visitas indicadas, traslados aeropuerto-hotel, autocar turístico, desayuno diario, hoteles cat. turista 3*, guía de habla hispana, guías locales",
-    "flyerImage": "/packages/flyers/europa--salidas-desde-gdl--europa-clasica-gdl.png",
-    "year": 2026,
-    "operator": "Eme Travel"
-  },
-  {
     "id": "europa--salidas-desde-mty--europa-clasica-mty",
     "title": "Europa Clásica desde Monterrey",
     "continent": "europa",
@@ -1088,10 +996,10 @@
     "operator": "Eme Travel"
   },
   {
-    "id": "europa--salidas-desde-qro--flyer-verano-en-europa-clasica",
-    "title": "Verano en Europa Clásica desde Querétaro",
+    "id": "europa--salidas-desde-gdl--europa-clasica-gdl-2-2",
+    "title": "Europa Clásica",
     "continent": "europa",
-    "departureCity": "Querétaro",
+    "departureCity": "Guadalajara",
     "destinations": [
       "Madrid",
       "Burgos",
@@ -1114,16 +1022,17 @@
       "Francia",
       "Italia"
     ],
-    "duration": "18D / 16N",
+    "duration": "17D / 15N",
     "dates": [
-      "22 Jul"
+      "1 de Noviembre de 2026",
+      "5 de Noviembre de 2026"
     ],
-    "price": 56900,
+    "price": 55000,
     "currency": "MXN",
-    "includes": "Vuelo transatlántico con maleta documentada 23kg, visitas indicadas, traslados aeropuerto-hotel, autocar turístico, desayuno diario, hoteles cat. turista 3*, guía de habla hispana, guías locales",
-    "flyerImage": "/packages/flyers/europa--salidas-desde-qro--flyer-verano-en-europa-clasica.png",
+    "includes": "Vuelo transatlántico con maleta documentada 23kg. Visitas indicadas. Traslados aeropuerto - hotel. Traslados en autocar turístico. Desayuno diario. Hospedaje en hoteles cat turista 3*. Guía correo de habla hispana durante todo el recorrido. Guías locales.",
+    "flyerImage": "/packages/flyers/europa--salidas-desde-gdl--europa-clasica-gdl-2-2.png",
     "year": 2026,
-    "operator": "Eme Travel"
+    "operator": "Emetravel Europa"
   },
   {
     "id": "europa--salidas-desde-cdmx--ruta-de-los-alpes-con-glaciar-express-2026",
@@ -1278,42 +1187,6 @@
     "operator": "EMETRAVEL EUROPA"
   },
   {
-    "id": "europa--salidas-desde-cdmx--encantos-de-europa-con-disney",
-    "title": "Encantos de Europa con Disney",
-    "continent": "europa",
-    "departureCity": "CDMX",
-    "destinations": [
-      "Roma",
-      "Florencia",
-      "Venecia",
-      "Milán",
-      "Lucerna",
-      "Zürich",
-      "París",
-      "Disneyland París",
-      "Londres"
-    ],
-    "countries": [
-      "Italia",
-      "Suiza",
-      "Francia",
-      "Inglaterra"
-    ],
-    "duration": "15D / 13N",
-    "dates": [
-      "8, 28 Abr",
-      "9, 11, 12, 14, 20 Ago",
-      "6, 17 Sep",
-      "12, 27 Nov"
-    ],
-    "price": 59900,
-    "currency": "MXN",
-    "includes": "Vuelo transatlántico México-Roma / Roma-Londres con maleta 23kg, ferry y tren París-Londres, autocar turístico, desayuno diario, entrada a Disneyland París, hoteles cat. turista 3*, guía de habla hispana, guías locales, transporte incluido",
-    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--encantos-de-europa-con-disney.png",
-    "year": 2026,
-    "operator": "Eme Travel"
-  },
-  {
     "id": "europa--salidas-desde-gdl--encantos-de-europa-con-disney-gdl",
     "title": "Encantos de Europa con Disney desde Guadalajara",
     "continent": "europa",
@@ -1417,6 +1290,42 @@
     "operator": "Eme Travel"
   },
   {
+    "id": "europa--salidas-desde-cdmx--encantos-de-europa-con-disney-3-2",
+    "title": "Encantos de Europa con Disney",
+    "continent": "europa",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Roma",
+      "Florencia",
+      "Venecia",
+      "Milán",
+      "Lucerna",
+      "Zúrich",
+      "París",
+      "Londres"
+    ],
+    "countries": [
+      "Italia",
+      "Suiza",
+      "Francia",
+      "Inglaterra"
+    ],
+    "duration": "15D/13N",
+    "dates": [
+      "20 AGO",
+      "17 SEP",
+      "27 OCT",
+      "12 NOV",
+      "27 NOV"
+    ],
+    "price": 59900,
+    "currency": "MXN",
+    "includes": "Vuelo trasatlántico México - Roma / Roma - Londres con maleta documentada 23 kg. Visitas indicadas. Traslados Aeropuerto - Hotel. Traslado en ferry o tren París - Londres. Transporte en autocar turístico para todas las transferencias y visitas programadas. Desayuno diario. Hospedaje en hoteles categoría turista 3*. Guía correo de habla hispana durante todo el recorrido. Guías locales. Entrada a Disneyland París. Transporte incluido.",
+    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--encantos-de-europa-con-disney-3-2.png",
+    "year": 2026,
+    "operator": "Emetravel Europa"
+  },
+  {
     "id": "europa--salidas-desde-cdmx--europa-del-este-con-italia",
     "title": "Europa del Este con Italia",
     "continent": "europa",
@@ -1450,55 +1359,6 @@
     "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--europa-del-este-con-italia.jpg",
     "year": 2026,
     "operator": "Eme Travel"
-  },
-  {
-    "id": "europa--salidas-desde-cdmx--europa-9-naciones-2026-2",
-    "title": "Europa 9 Naciones",
-    "continent": "europa",
-    "departureCity": "CDMX",
-    "destinations": [
-      "Lucerna",
-      "Zúrich",
-      "París",
-      "Costa Azul",
-      "Frankfurt",
-      "Heidelberg",
-      "Madrid",
-      "Barcelona",
-      "Zaragoza",
-      "Padova",
-      "Venecia",
-      "Florencia",
-      "Roma",
-      "Pisa",
-      "Luxemburgo",
-      "Innsbruck",
-      "Londres",
-      "Montecarlo"
-    ],
-    "countries": [
-      "Suiza",
-      "Francia",
-      "Alemania",
-      "España",
-      "Italia",
-      "Luxemburgo",
-      "Austria",
-      "Inglaterra",
-      "Mónaco"
-    ],
-    "duration": "19D / 17N",
-    "dates": [
-      "8, 15, 19**, 27 AGO",
-      "19 SEP / 3, 9, 17, 24 Y 28** OCT",
-      "7, 14, 21 Y 28 NOV / 2** Y 5 DIC"
-    ],
-    "price": 63000,
-    "currency": "MXN",
-    "includes": "Vuelo transatlántico con maleta documentada 23 kg. Visitas indicadas. Traslado en ferry o tren Londres / París. Traslados aeropuerto - hotel. Transporte en autocar turístico para todas las transferencias y visitas programadas. Desayuno diario. Traslado en vaporetto. Hospedaje en hoteles cat turista 3*. Guía correo de habla hispana durante todo el recorrido. Guías locales en lugares indicados.",
-    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--europa-9-naciones-2026-2.png",
-    "year": 2026,
-    "operator": "EMETRAVEL EUROPA"
   },
   {
     "id": "europa--salidas-desde-cdmx--navidad-en-roma",
@@ -1548,39 +1408,6 @@
     "operator": "EMETRAVEL EUROPA"
   },
   {
-    "id": "europa--salidas-desde-mty--verano-con-encantos-de-europa-con-disney-mty",
-    "title": "Verano con Encantos de Europa con Disney desde Monterrey",
-    "continent": "europa",
-    "departureCity": "Monterrey",
-    "destinations": [
-      "Roma",
-      "Florencia",
-      "Venecia",
-      "Milán",
-      "Lucerna",
-      "Zürich",
-      "París",
-      "Disneyland París",
-      "Londres"
-    ],
-    "countries": [
-      "Italia",
-      "Suiza",
-      "Francia",
-      "Inglaterra"
-    ],
-    "duration": "15D / 13N",
-    "dates": [
-      "31 Jul"
-    ],
-    "price": 64900,
-    "currency": "MXN",
-    "includes": "Vuelo transatlántico Monterrey-Roma / Londres-Monterrey con maleta documentada 23kg, ferry o tren París-Londres, autocar turístico, desayuno diario, entrada a Disneyland París, hoteles cat. turista 3*, guía de habla hispana, guías locales, transporte incluido",
-    "flyerImage": "/packages/flyers/europa--salidas-desde-mty--verano-con-encantos-de-europa-con-disney-mty.png",
-    "year": 2026,
-    "operator": "Eme Travel"
-  },
-  {
     "id": "europa--salidas-desde-cdmx--navidad-en-suiza-con-disney-paris",
     "title": "Navidad en Suiza con Disneyland Paris",
     "continent": "europa",
@@ -1609,38 +1436,6 @@
     "currency": "MXN",
     "includes": "Vuelo trasatlántico, traslados aeropuerto-hotel y entre ciudades (ferry/tren/autocar), hospedaje en hoteles 3* con desayuno diario, visitas programadas, guía de habla hispana, guías locales, entrada a Disneyland París.",
     "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--navidad-en-suiza-con-disney-paris.png",
-    "year": 2026,
-    "operator": "EMETRAVEL EUROPA"
-  },
-  {
-    "id": "europa--salidas-desde-cdmx--navidad-en-roma-y-nuevo-ano-en-paris-con-disney",
-    "title": "NAVIDAD EN ROMA Y AÑO NUEVO EN PARÍS con Disneyland Paris",
-    "continent": "europa",
-    "departureCity": "CDMX",
-    "destinations": [
-      "ROMA",
-      "FLORENCIA",
-      "VENECIA",
-      "MILÁN",
-      "LUCERNA",
-      "ZURICH",
-      "PARÍS",
-      "LONDRES"
-    ],
-    "countries": [
-      "ITALIA",
-      "SUIZA",
-      "FRANCIA",
-      "INGLATERRA"
-    ],
-    "duration": "15D / 13N",
-    "dates": [
-      "23 DE DICIEMBRE"
-    ],
-    "price": 64900,
-    "currency": "MXN",
-    "includes": "Vuelo trasatlántico México - Roma / Roma - Londres con maleta documentada 23 Kg, visitas indicadas, traslados aeropuerto - hotel, traslado en ferry o tren París - Londres, transporte en autocar turístico, desayuno diario, hospedaje en hoteles categoría turista 3*, guía correo de habla hispana, guías locales, entrada a Disneyland París.",
-    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--navidad-en-roma-y-nuevo-ano-en-paris-con-disney.png",
     "year": 2026,
     "operator": "EMETRAVEL EUROPA"
   },
@@ -1803,40 +1598,6 @@
     "currency": "MXN",
     "includes": "Vuelo transatlántico México-Estambul / Dubai-México con 1 maleta documentada 22 kg. Visitas indicadas. 5 noches de alojamiento en Estambul (régimen cama & desayuno. 2 noches de alojamiento en Capadocia,1 noche en Pamukkale, 2 noches en Izmir (régimen cama, desayuno y cena). 4 noches de alojamiento en Dubái en régimen cama y desayuno. Traslados y visitas indicadas en autocar turístico.",
     "flyerImage": "/packages/flyers/medio-oriente--turquia-y-dubai-flyer-2026.png",
-    "year": 2026,
-    "operator": "EMETRAVEL EUROPA"
-  },
-  {
-    "id": "medio-oriente--turquia-dubai-grecia-n-2",
-    "title": "TURQUÍA, DUBAI & CRUCERO POR LAS ISLAS GRIEGAS",
-    "continent": "medio-oriente",
-    "departureCity": "CDMX",
-    "destinations": [
-      "ESTAMBUL",
-      "ANKARA",
-      "CAPADOCIA",
-      "PAMUKKALE",
-      "IZMIR",
-      "KUSADASI",
-      "MYKONOS",
-      "PIREO",
-      "SANTORINI",
-      "DUBAI"
-    ],
-    "countries": [
-      "TURQUÍA",
-      "GRECIA",
-      "EAU"
-    ],
-    "duration": "16D / 14N",
-    "dates": [
-      "1 DE AGOSTO",
-      "3 DE OCTUBRE"
-    ],
-    "price": 65000,
-    "currency": "MXN",
-    "includes": "Traslados, vuelo redondo México-Estambul/Dubái-México, alojamiento en hoteles (Estambul, Capadocia, Pamukkale, Kuşadası/Izmir, Dubái) con régimen de comidas especificado, crucero por Grecia (cabina interior Celestyl Cruises), guía profesional de habla hispana, bus de lujo con A/C, entradas a museos, propinas en hoteles y restaurantes, comidas según descriptivo.",
-    "flyerImage": "/packages/flyers/medio-oriente--turquia-dubai-grecia-n-2.png",
     "year": 2026,
     "operator": "EMETRAVEL EUROPA"
   }
