@@ -215,6 +215,63 @@
     "operator": "EMETRAVEL BRASIL"
   },
   {
+    "id": "2027--america--cdmx--brasil-esencial-cdmx",
+    "title": "BRASIL ESENCIAL",
+    "continent": "america",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Rio de Janeiro"
+    ],
+    "countries": [
+      "Brasil"
+    ],
+    "duration": "08D / 06N",
+    "dates": [
+      "18 ENE",
+      "21 ENE",
+      "25 ENE",
+      "18 FEB"
+    ],
+    "price": 29990,
+    "currency": "MXN",
+    "includes": "Vuelo redondo desde CDMX con maleta documentada. Hospedaje con desayunos. Traslado apto-hotel-apto. City Tour por Maracaná (Exterior), Sambódromo (Exterior), Escaleras de Selaron, Centro Histórico. Visita a Cristo Redentor. Visita a Pan de Azúcar. Hospedaje en hoteles 3 estrellas. Guía de habla Hispana.",
+    "flyerImage": "/packages/flyers/2027--america--cdmx--brasil-esencial-cdmx.png",
+    "year": 2027,
+    "operator": "EMETRAVEL BRASIL"
+  },
+  {
+    "id": "2027--america--cdmx--carnaval-de-brasil-2027",
+    "title": "Carnaval de Brasil",
+    "continent": "america",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Rio de Janeiro",
+      "Maracaná",
+      "Cristo Redentor",
+      "Copacabana",
+      "Ipanema",
+      "Escaleras de Selaron",
+      "Pan de Azúcar",
+      "Sambodromo",
+      "Centro Histórico"
+    ],
+    "countries": [
+      "Brasil"
+    ],
+    "duration": "08D / 06N",
+    "dates": [
+      "1 FEB 2027",
+      "4 FEB 2027",
+      "8 FEB 2027"
+    ],
+    "price": 29990,
+    "currency": "MXN",
+    "includes": "Vuelo redondo desde CDMX con maleta documentada, hospedaje con desayunos en hoteles 3 estrellas, traslados apto-hotel-apto, City Tour por Maracaná (Exterior), Sambodromo (Exterior), Escaleras de Selaron, Centro Histórico, visita a Cristo Redentor, visita a Pan de Azúcar, guía de habla Hispana.",
+    "flyerImage": "/packages/flyers/2027--america--cdmx--carnaval-de-brasil-2027.png",
+    "year": 2027,
+    "operator": "EMETRAVEL BRASIL"
+  },
+  {
     "id": "america--salidas-desde-cdmx--navidad-en-punta-cana",
     "title": "Navidad en Punta Cana",
     "continent": "america",
@@ -289,6 +346,37 @@
     "flyerImage": "/packages/flyers/america--salidas-desde-cdmx--navidad-en-rio-de-janeiro.png",
     "year": 2026,
     "operator": "Eme Travel"
+  },
+  {
+    "id": "2027--america--cun--carnaval-de-brasil-2027",
+    "title": "Carnaval de Brasil",
+    "continent": "america",
+    "departureCity": "Cancún",
+    "destinations": [
+      "Rio de Janeiro",
+      "Maracaná",
+      "Cristo Redentor",
+      "Copacabana",
+      "Ipanema",
+      "Escaleras de Selaron",
+      "Sambodromo",
+      "Pan de Azúcar",
+      "Centro Histórico"
+    ],
+    "countries": [
+      "Brasil"
+    ],
+    "duration": "08D / 06N",
+    "dates": [
+      "4 FEB",
+      "8 FEB"
+    ],
+    "price": 35000,
+    "currency": "MXN",
+    "includes": "Vuelo redondo desde Cancún con maleta documentada. Hospedaje con desayunos. Traslado apto - hotel - apto. City Tour por Maracaná (Exterior), Sambodromo (Exterior), Escaleras de Selaron, Centro Histórico. Visita a Cristo Redentor. Visita a Pan de Azúcar. Hospedaje en hoteles 3 estrellas. Guía de habla Hispana.",
+    "flyerImage": "/packages/flyers/2027--america--cun--carnaval-de-brasil-2027.png",
+    "year": 2027,
+    "operator": "EMETRAVEL BRASIL"
   },
   {
     "id": "america--salidas-desde-cdmx--peru-al-completo",
@@ -426,6 +514,68 @@
     "operator": "EMETRAVEL ASIA"
   },
   {
+    "id": "2027--asia--cdmx--japon-imprescindible-con-disney-cdmx",
+    "title": "JAPÓN IMPRESCINDIBLE CON Tokyo Disneyland",
+    "continent": "asia",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Tokio",
+      "Kioto",
+      "Osaka",
+      "Tokyo Disneyland"
+    ],
+    "countries": [
+      "Japón"
+    ],
+    "duration": "11D / 08N",
+    "dates": [
+      "21 Y 28 ENE",
+      "8 FEB",
+      "5, 9, 23 Y 26 MAR"
+    ],
+    "price": 69900,
+    "currency": "MXN",
+    "includes": "Vuelo redondo directo CDMX - Tokio con Aeroméxico. Boleto de tren bala Nozomi clase turista Tokyo-Kyoto / Osaka-Tokyo. 3 noches de alojamiento en Tokyo, 3 noches en Kyoto, 2 noches en Osaka. Traslados y visitas indicadas. Guías de habla hispana. Entrada a Disneyland Tokio con transporte incluido.",
+    "flyerImage": "/packages/flyers/2027--asia--cdmx--japon-imprescindible-con-disney-cdmx.png",
+    "year": 2027,
+    "operator": "Emetravel Japón"
+  },
+  {
+    "id": "2027--asia--cdmx--tailandia-al-completo-con-islas-phi-phi-y-dubai",
+    "title": "Tailandia al Completo con Islas Phi Phi y Dubái",
+    "continent": "asia",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Dubái",
+      "Bangkok",
+      "Ayutthaya",
+      "Lopburi",
+      "Phitsanuloke",
+      "Sukhothai",
+      "Chiang Mai",
+      "Chiang Rai",
+      "Koh Phi Phi",
+      "Phuket"
+    ],
+    "countries": [
+      "Emiratos Árabes Unidos",
+      "Tailandia"
+    ],
+    "duration": "14D / 12N",
+    "dates": [
+      "18 ENE",
+      "2 FEB",
+      "18 FEB",
+      "26 FEB"
+    ],
+    "price": 69900,
+    "currency": "MXN",
+    "includes": "Vuelo México-Dubái-Bangkok-México en clase turista (1 maleta 23 kg y 1 maleta de mano 7 kg), traslados Hotel-Aeropuerto-Hotel, hospedaje 12 noches con desayuno diario, vuelo Chiang Rai-Phuket-Bangkok en clase turista, guías de habla hispana, entradas a los templos mencionados en el programa, visita al santuario de elefantes con baño, excursión de día completo a Islas Phi Phi con almuerzo incluido, visita a la Comunidad de las mujeres de cuello de Jirafa.",
+    "flyerImage": "/packages/flyers/2027--asia--cdmx--tailandia-al-completo-con-islas-phi-phi-y-dubai.png",
+    "year": 2027,
+    "operator": "EMETRAVEL ASIA"
+  },
+  {
     "id": "asia--dubai-y-bali",
     "title": "Dubái y Bali",
     "continent": "asia",
@@ -484,6 +634,67 @@
     "includes": "Vuelo redondo México-Tokio-México con Aeroméxico (maleta 20kg), traslados, alojamiento en hoteles categoría turista con desayuno diario, vuelos internos, tren de alta velocidad Tokio-Osaka-Tokio, comidas y visitas según itinerario, guía de habla hispana.",
     "flyerImage": "/packages/flyers/asia--japon-y-tailandia-islas-phi-phi.png",
     "year": 2026,
+    "operator": "EMETRAVEL ASIA"
+  },
+  {
+    "id": "2027--asia--mty--japon-tailandia-islas-phi-phi-mty-2027",
+    "title": "JAPÓN Y TAILANDIA + ISLAS PHI PHI",
+    "continent": "asia",
+    "departureCity": "Monterrey",
+    "destinations": [
+      "Tokio",
+      "Nara",
+      "Osaka",
+      "Bangkok",
+      "Chiang Mai",
+      "Chiang Rai",
+      "Phuket",
+      "Koh Phi Phi"
+    ],
+    "countries": [
+      "Japón",
+      "Tailandia"
+    ],
+    "duration": "19D / 16N",
+    "dates": [
+      "16 MAR 2027"
+    ],
+    "price": 79900,
+    "currency": "MXN",
+    "includes": "Vuelo redondo Monterrey-Tokio-Monterrey con Aeroméxico, traslados, alojamiento en hoteles categoría turista con desayuno, comidas, vuelos internos, tren de alta velocidad Tokio-Osaka-Tokio, visitas indicadas y guía de habla hispana.",
+    "flyerImage": "/packages/flyers/2027--asia--mty--japon-tailandia-islas-phi-phi-mty-2027.png",
+    "year": 2027,
+    "operator": "EMETRAVEL ASIA"
+  },
+  {
+    "id": "2027--asia--cdmx--japon-tailandia-islas-phi-phi-2027",
+    "title": "Japón y Tailandia + Islas Phi Phi",
+    "continent": "asia",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Tokio",
+      "Nara",
+      "Osaka",
+      "Bangkok",
+      "Chiang Mai",
+      "Chiang Rai",
+      "Phuket",
+      "Koh Phi Phi"
+    ],
+    "countries": [
+      "Japón",
+      "Tailandia"
+    ],
+    "duration": "19D / 16N",
+    "dates": [
+      "13 MAR",
+      "15 MAR"
+    ],
+    "price": 79900,
+    "currency": "MXN",
+    "includes": "Vuelo redondo CDMX-Tokio-CDMX con Aeroméxico (maleta documentada de 20 kg), traslados, alojamiento en hoteles categoría turista con desayuno diario, 4 noches en Tokio, 3 en Osaka, 3 en Bangkok, 1 noche en Chiang Rai, 2 noches en Chiang Mai, 2 noches en Phuket, comidas según descriptivo, vuelo interno en ruta, tren de alta velocidad Tokio-Osaka-Tokio, visitas indicadas en el itinerario y guía de habla hispana.",
+    "flyerImage": "/packages/flyers/2027--asia--cdmx--japon-tailandia-islas-phi-phi-2027.png",
+    "year": 2027,
     "operator": "EMETRAVEL ASIA"
   },
   {
@@ -553,6 +764,111 @@
     "flyerImage": "/packages/flyers/asia--corea-japon-y-china-con-disney.png",
     "year": 2026,
     "operator": "Eme Travel"
+  },
+  {
+    "id": "2027--asia--cdmx--ruta-imperial-de-asia",
+    "title": "Ruta Imperial de Asia",
+    "continent": "asia",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Tokio",
+      "Osaka",
+      "Shanghái",
+      "Xi'an",
+      "Beijing",
+      "Hanoi",
+      "Ninh Binh",
+      "Bahía de Halong",
+      "Siem Reap"
+    ],
+    "countries": [
+      "Japón",
+      "China",
+      "Vietnam",
+      "Camboya"
+    ],
+    "duration": "22D / 19N",
+    "dates": [
+      "25 FEB / 16 MAR"
+    ],
+    "price": 99000,
+    "currency": "MXN",
+    "includes": "Vuelos redondos (México-Tokio-México con Aeroméxico), vuelos internos, tren de alta velocidad, alojamiento en hoteles 4* con desayuno, crucero en Bahía de Halong, traslados, visitas con guía de habla hispana y comidas.",
+    "flyerImage": "/packages/flyers/2027--asia--cdmx--ruta-imperial-de-asia.png",
+    "year": 2027,
+    "operator": "EMETRAVEL ASIA"
+  },
+  {
+    "id": "2027--asia--cdmx--corea-japon-y-china-con-disney-2027",
+    "title": "Corea, Japón y China con Disneyland",
+    "continent": "asia",
+    "departureCity": "CDMX",
+    "destinations": [
+      "SEÚL",
+      "GYEONGJU",
+      "BUSAN",
+      "TOKIO",
+      "OSAKA",
+      "SHANGHAI",
+      "XI'AN",
+      "BEIJING",
+      "DISNEYLAND SHANGHAI"
+    ],
+    "countries": [
+      "Corea",
+      "Japón",
+      "China"
+    ],
+    "duration": "22D / 19N",
+    "dates": [
+      "16 ENE 2027",
+      "22 ENE 2027",
+      "26 ENE 2027",
+      "14 FEB 2027",
+      "16 FEB 2027",
+      "28 FEB 2027",
+      "7 MAR 2027",
+      "9 MAR 2027",
+      "13 MAR 2027",
+      "15 MAR 2027"
+    ],
+    "price": 99000,
+    "currency": "MXN",
+    "includes": "Boleto de avión redondo México-Seúl, vuelo Busan-Tokio, maleta documentada, visitas indicadas y alojamiento en Seúl, Busan, Tokio, Osaka, Shangai, Xi'an y Beijing.",
+    "flyerImage": "/packages/flyers/2027--asia--cdmx--corea-japon-y-china-con-disney-2027.png",
+    "year": 2027,
+    "operator": "EMETRAVEL ASIA"
+  },
+  {
+    "id": "2027--asia--cdmx--leyendas-del-pacifico-cdmx",
+    "title": "LEYENDAS DEL PACÍFICO JAPÓN, CHINA Y BALI",
+    "continent": "asia",
+    "departureCity": "CDMX",
+    "destinations": [
+      "TOKIO",
+      "OSAKA",
+      "SHANGHÁI",
+      "XI'AN",
+      "BEIJING",
+      "BALI",
+      "UBUD",
+      "ULUWATU"
+    ],
+    "countries": [
+      "JAPÓN",
+      "CHINA",
+      "INDONESIA"
+    ],
+    "duration": "22D / 19N",
+    "dates": [
+      "26 ENE 2027"
+    ],
+    "price": 99000,
+    "currency": "MXN",
+    "includes": "Traslados, vuelo redondo México-Tokio-México con Aeroméxico, vuelos internos, tren de alta velocidad, alojamiento en hoteles categoría turista con desayuno diario, comidas según descriptivo, visitas y tours en Bali, guía de habla hispana.",
+    "flyerImage": "/packages/flyers/2027--asia--cdmx--leyendas-del-pacifico-cdmx.png",
+    "year": 2027,
+    "operator": "EMETRAVEL ASIA"
   },
   {
     "id": "europa--salidas-desde-cdmx--tesoros-ibericos",
@@ -764,6 +1080,36 @@
     "flyerImage": "/packages/flyers/europa--salidas-desde-mty--verano-en-italia-y-paris-con-disney-mty.png",
     "year": 2026,
     "operator": "Eme Travel"
+  },
+  {
+    "id": "europa--salidas-desde-cdmx--verano-en-italia-y-paris-con-disney",
+    "title": "VERANO EN ITALIA & PARÍS con Disneyland PARIS",
+    "continent": "europa",
+    "departureCity": "CDMX",
+    "destinations": [
+      "París",
+      "Disney",
+      "Ginebra",
+      "Aosta",
+      "Venecia",
+      "Asís",
+      "Roma"
+    ],
+    "countries": [
+      "Francia",
+      "Suiza",
+      "Italia"
+    ],
+    "duration": "10D / 08N",
+    "dates": [
+      "10 DE SEPTIEMBRE"
+    ],
+    "price": 51900,
+    "currency": "MXN",
+    "includes": "Vuelo transatlántico con maleta documentada, visitas indicadas, traslados aeropuerto-hotel-aeropuerto, transporte en autocar turístico, traslado en vaporetto en Venecia, desayuno diario, hospedaje en hoteles 3 estrellas, guía de habla hispana, entrada a Disneyland París, guías locales.",
+    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--verano-en-italia-y-paris-con-disney.png",
+    "year": 2026,
+    "operator": "EMETRAVEL EUROPA"
   },
   {
     "id": "europa--salidas-desde-cdmx--gran-tour-de-italia",
@@ -1223,40 +1569,6 @@
     "operator": "Eme Travel"
   },
   {
-    "id": "europa--salidas-desde-mty--encantos-de-europa-con-disney-mty",
-    "title": "Encantos de Europa con Disney desde Monterrey",
-    "continent": "europa",
-    "departureCity": "Monterrey",
-    "destinations": [
-      "Roma",
-      "Florencia",
-      "Venecia",
-      "Milán",
-      "Lucerna",
-      "Zürich",
-      "París",
-      "Disneyland París",
-      "Londres"
-    ],
-    "countries": [
-      "Italia",
-      "Suiza",
-      "Francia",
-      "Inglaterra"
-    ],
-    "duration": "15D / 13N",
-    "dates": [
-      "20 Ago",
-      "25 Nov"
-    ],
-    "price": 59900,
-    "currency": "MXN",
-    "includes": "Vuelo transatlántico Monterrey-Roma / Londres-Monterrey con maleta documentada 23kg, ferry o tren París-Londres, autocar turístico, desayuno diario, entrada a Disneyland París, hoteles cat. turista 3*, guía de habla hispana, guías locales, transporte incluido",
-    "flyerImage": "/packages/flyers/europa--salidas-desde-mty--encantos-de-europa-con-disney-mty.png",
-    "year": 2026,
-    "operator": "Eme Travel"
-  },
-  {
     "id": "europa--salidas-desde-cdmx--halloween-con-encantos-de-europa-con-disney",
     "title": "Halloween con Encantos de Europa y Disney",
     "continent": "europa",
@@ -1408,38 +1720,6 @@
     "operator": "EMETRAVEL EUROPA"
   },
   {
-    "id": "europa--salidas-desde-cdmx--navidad-en-suiza-con-disney-paris",
-    "title": "Navidad en Suiza con Disneyland Paris",
-    "continent": "europa",
-    "departureCity": "CDMX",
-    "destinations": [
-      "ROMA",
-      "FLORENCIA",
-      "VENECIA",
-      "MILÁN",
-      "LUCERNA",
-      "ZURICH",
-      "PARÍS",
-      "LONDRES"
-    ],
-    "countries": [
-      "ITALIA",
-      "SUIZA",
-      "FRANCIA",
-      "INGLATERRA"
-    ],
-    "duration": "15D / 13N",
-    "dates": [
-      "17 DE DICIEMBRE"
-    ],
-    "price": 64900,
-    "currency": "MXN",
-    "includes": "Vuelo trasatlántico, traslados aeropuerto-hotel y entre ciudades (ferry/tren/autocar), hospedaje en hoteles 3* con desayuno diario, visitas programadas, guía de habla hispana, guías locales, entrada a Disneyland París.",
-    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--navidad-en-suiza-con-disney-paris.png",
-    "year": 2026,
-    "operator": "EMETRAVEL EUROPA"
-  },
-  {
     "id": "europa--salidas-desde-cdmx--auroras-boreales",
     "title": "Auroras Boreales en Islandia",
     "continent": "europa",
@@ -1469,6 +1749,37 @@
     "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--auroras-boreales.jpg",
     "year": 2026,
     "operator": "Eme Travel"
+  },
+  {
+    "id": "2027--europa--cdmx--auroras-boreales-001",
+    "title": "Auroras Boreales en Islandia + Ámsterdam, París y Bruselas",
+    "continent": "europa",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Ámsterdam",
+      "Bruselas",
+      "París",
+      "Reikiavik",
+      "Círculo de Oro"
+    ],
+    "countries": [
+      "Países Bajos",
+      "Bélgica",
+      "Francia",
+      "Islandia"
+    ],
+    "duration": "12D / 9N",
+    "dates": [
+      "23 ENE",
+      "12 FEB",
+      "1 MAR"
+    ],
+    "price": 65000,
+    "currency": "MXN",
+    "includes": "Vuelo trasatlántico y vuelos internos con maleta documentada, traslados aeropuerto-hotel y en autocar turístico, desayuno diario, hospedaje en hoteles 3*, guía de habla hispana.",
+    "flyerImage": "/packages/flyers/2027--europa--cdmx--auroras-boreales-001.png",
+    "year": 2027,
+    "operator": "EMETRAVEL EUROPA"
   },
   {
     "id": "medio-oriente--dubai-escencial-2026-flyer",
