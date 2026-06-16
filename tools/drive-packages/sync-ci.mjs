@@ -12,8 +12,14 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "../..");
 const OUTPUT_JSON = path.resolve(ROOT, "src/data/packages.json");
 const OUTPUT_IMAGES = path.resolve(ROOT, "public/packages/flyers");
-const ROOT_FOLDER_ID = "1T2Q1ZZonR9NW7e_a6165KmR3s8i_7RXW";
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+
+// Carpetas-fuente en Drive, una por anio. idPrefix namespacea los IDs para que
+// distintos anios no colisionen. 2026 (legacy) mantiene IDs sin prefijo.
+const SOURCES = [
+  { folderId: "1T2Q1ZZonR9NW7e_a6165KmR3s8i_7RXW", year: 2026, idPrefix: "" },
+  { folderId: "1yFFnmcAPAP-XSpHRF613hH3vXMPEEFX0", year: 2027, idPrefix: "2027--" },
+];
 
 // Service Account from env var (file path) or inline JSON
 const SA_PATH = process.env.GOOGLE_SERVICE_ACCOUNT_PATH;
@@ -26,7 +32,7 @@ if (!GEMINI_API_KEY) {
   process.exit(1);
 }
 
-const SKIP_FOLDERS = ["ITINERARIOS", "ULTIMOS LUGARES", "ÚLTIMOS LUGARES"];
+const SKIP_FOLDERS = ["ITINERARIOS", "ULTIMOS LUGARES", "ÚLTIMOS LUGARES", "TOURS OPCIONALES"];
 
 const CONTINENT_MAP = {
   EUROPA: "europa",
@@ -41,7 +47,7 @@ function parseDepartureCity(folderName) {
   if (lower.includes("mty") || lower.includes("monterrey")) return "Monterrey";
   if (lower.includes("gdl") || lower.includes("guadalajara")) return "Guadalajara";
   if (lower.includes("qro") || lower.includes("querétaro") || lower.includes("queretaro")) return "Querétaro";
-  if (lower.includes("cancún") || lower.includes("cancun")) return "Cancún";
+  if (lower.includes("cancún") || lower.includes("cancun") || /\bcun\b/.test(lower)) return "Cancún";
   return null;
 }
 
@@ -72,7 +78,7 @@ async function downloadFile(fileId) {
   return Buffer.from(res.data);
 }
 
-async function scanDrive(folderId = ROOT_FOLDER_ID, pathParts = [], continent = null, departureCity = null) {
+async function scanDrive(folderId, year, idPrefix, pathParts = [], continent = null, departureCity = null) {
   const files = await listFiles(folderId);
   const results = [];
 
@@ -81,19 +87,19 @@ async function scanDrive(folderId = ROOT_FOLDER_ID, pathParts = [], continent = 
       if (SKIP_FOLDERS.includes(file.name.toUpperCase())) continue;
       const continentSlug = CONTINENT_MAP[file.name.toUpperCase()];
       if (continentSlug) {
-        const sub = await scanDrive(file.id, [...pathParts, file.name], continentSlug, null);
+        const sub = await scanDrive(file.id, year, idPrefix, [...pathParts, file.name], continentSlug, null);
         results.push(...sub);
       } else {
         const city = parseDepartureCity(file.name);
-        const sub = await scanDrive(file.id, [...pathParts, file.name], continent, city || departureCity);
+        const sub = await scanDrive(file.id, year, idPrefix, [...pathParts, file.name], continent, city || departureCity);
         results.push(...sub);
       }
     } else if (file.mimeType.startsWith("image/")) {
       const ext = file.name.toLowerCase().match(/\.(jpe?g)$/) ? ".jpg" : ".png";
       const slug = slugify(file.name);
       const folderPrefix = pathParts.map(p => slugify(p)).join("--");
-      const id = folderPrefix ? `${folderPrefix}--${slug}` : slug;
-      results.push({ id, driveFileId: file.id, fileName: file.name, continent, departureCity, ext, drivePath: [...pathParts, file.name].join(" / ") });
+      const id = `${idPrefix}${folderPrefix ? `${folderPrefix}--` : ""}${slug}`;
+      results.push({ id, driveFileId: file.id, fileName: file.name, continent, departureCity, year, ext, drivePath: [...pathParts, file.name].join(" / ") });
     }
   }
   return results;
@@ -153,7 +159,12 @@ async function main() {
   console.log(`📊 Estado actual: ${existing.length} paquetes en packages.json\n`);
 
   console.log("Escaneando Drive...");
-  const driveFiles = await scanDrive();
+  const driveFiles = [];
+  for (const src of SOURCES) {
+    const found = await scanDrive(src.folderId, src.year, src.idPrefix);
+    console.log(`   ${src.year}: ${found.length} archivos`);
+    driveFiles.push(...found);
+  }
   const driveIds = new Set(driveFiles.map(f => f.id));
   console.log(`   ${driveFiles.length} archivos encontrados en Drive\n`);
 
@@ -186,7 +197,7 @@ async function main() {
           destinations: parsed.destinations || [], countries: parsed.countries || [],
           duration: parsed.duration || null, dates: parsed.dates || [],
           price: parsed.price || null, currency: parsed.currency || "MXN",
-          includes: parsed.includes || null, flyerImage: `/packages/flyers/${file.id}${file.ext}`, year: 2026, operator: parsed.operator || "Eme Travel",
+          includes: parsed.includes || null, flyerImage: `/packages/flyers/${file.id}${file.ext}`, year: file.year, operator: parsed.operator || "Eme Travel",
         });
         console.log(`      ✓ ${parsed.title} — $${parsed.price?.toLocaleString() || "?"} MXN`);
       } catch (err) {

@@ -11,15 +11,17 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-export type FilterDimension = "continent" | "departureCity" | "country";
+export type FilterDimension = "year" | "continent" | "departureCity" | "country";
 
 export type FilterValues = {
+  year: string;
   continent: string;
   departureCity: string;
   country: string;
 };
 
 export const DEFAULT_FILTER_VALUES: FilterValues = {
+  year: "all",
   continent: "all",
   departureCity: "all",
   country: "all",
@@ -33,6 +35,7 @@ export const CONTINENT_LABELS: Record<string, string> = {
 };
 
 type PackageLike = {
+  year?: number;
   continent?: string;
   departureCity?: string;
   countries?: string[];
@@ -50,6 +53,7 @@ export function applyPackageFilters<T extends PackageLike>(
   values: FilterValues,
 ): T[] {
   return packages.filter((pkg) => {
+    if (values.year !== "all" && String(pkg.year) !== values.year) return false;
     if (values.continent !== "all" && pkg.continent !== values.continent) return false;
     if (values.departureCity !== "all" && pkg.departureCity !== values.departureCity) return false;
     if (values.country !== "all" && !(pkg.countries ?? []).includes(values.country)) return false;
@@ -63,6 +67,13 @@ export function PackageFilters<T extends PackageLike>({
   values,
   onChange,
 }: Props<T>) {
+  const years = useMemo(
+    () =>
+      ([...new Set(packages.map((p) => p.year).filter(Boolean))] as number[]).sort(
+        (a, b) => b - a,
+      ),
+    [packages],
+  );
   const continents = useMemo(
     () =>
       [...new Set(packages.map((p) => p.continent).filter(Boolean))] as string[],
@@ -93,6 +104,7 @@ export function PackageFilters<T extends PackageLike>({
   const clear = () => onChange(DEFAULT_FILTER_VALUES);
 
   const hasActiveFilter =
+    (enabled.includes("year") && values.year !== "all") ||
     (enabled.includes("continent") && values.continent !== "all") ||
     (enabled.includes("departureCity") && values.departureCity !== "all") ||
     (enabled.includes("country") && values.country !== "all");
@@ -105,6 +117,25 @@ export function PackageFilters<T extends PackageLike>({
         <Filter className="h-4 w-4" />
         <span className="text-sm font-medium">Filtrar:</span>
       </div>
+
+      {enabled.includes("year") && years.length > 0 && (
+        <Select
+          value={values.year}
+          onValueChange={(v) => update("year", v)}
+        >
+          <SelectTrigger className="w-[140px]">
+            <SelectValue placeholder="Año" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="all">Todos los años</SelectItem>
+            {years.map((y) => (
+              <SelectItem key={y} value={String(y)}>
+                {y}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+      )}
 
       {enabled.includes("continent") && continents.length > 0 && (
         <Select

@@ -29,7 +29,9 @@ export function PaquetesClient() {
   const clearFilters = () => setFilterValues(DEFAULT_FILTER_VALUES);
 
   const hasFilters =
-    filterValues.continent !== "all" || filterValues.departureCity !== "all";
+    filterValues.year !== "all" ||
+    filterValues.continent !== "all" ||
+    filterValues.departureCity !== "all";
 
   return (
     <>
@@ -62,7 +64,7 @@ export function PaquetesClient() {
           <div className="container">
             <PackageFilters
               packages={allPackages}
-              enabled={["continent", "departureCity"]}
+              enabled={["year", "continent", "departureCity"]}
               values={filterValues}
               onChange={setFilterValues}
             />
@@ -99,13 +101,18 @@ export function PaquetesClient() {
                       className="object-cover object-top transition-transform duration-500 group-hover:scale-110"
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
-                    <div className="absolute top-4 left-4 z-10 flex gap-2">
+                    <div className="absolute top-4 left-4 right-4 z-10 flex flex-wrap gap-2">
                       <Badge className="bg-accent text-accent-foreground">
                         {CONTINENT_LABELS[pkg.continent] || pkg.continent}
                       </Badge>
                       {pkg.departureCity && (
                         <Badge className="bg-secondary text-secondary-foreground">
                           Desde {pkg.departureCity}
+                        </Badge>
+                      )}
+                      {pkg.year && (
+                        <Badge className="ml-auto bg-background/90 text-foreground">
+                          {pkg.year}
                         </Badge>
                       )}
                     </div>
