@@ -37,7 +37,7 @@ export const CONTINENT_LABELS: Record<string, string> = {
 type PackageLike = {
   year?: number;
   continent?: string;
-  departureCity?: string;
+  departureCity?: string | null;
   countries?: string[];
 };
 
