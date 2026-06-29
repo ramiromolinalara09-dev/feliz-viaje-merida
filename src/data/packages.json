@@ -320,6 +320,30 @@
     "operator": "EME TRAVEL"
   },
   {
+    "id": "america--salidas-desde-cdmx--caribe-brasileno",
+    "title": "CARIBE BRASILEÑO RÍO, BÚZIOS Y ARRAIAL",
+    "continent": "america",
+    "departureCity": "CDMX",
+    "destinations": [
+      "RIO DE JANEIRO",
+      "ARRAIAL DO CABO",
+      "BÚZIOS"
+    ],
+    "countries": [
+      "Brasil"
+    ],
+    "duration": "09D / 07N",
+    "dates": [
+      "13 DE OCTUBRE 2026"
+    ],
+    "price": 34800,
+    "currency": "MXN",
+    "includes": "Vuelo redondo México - Río de Janeiro con maleta documentada. Traslados aeropuerto - hotel - aeropuerto. Traslado interno Río de Janeiro - Búzios. Alojamiento en hoteles categoría 3* y 4* con desayuno diario. 5 noches de alojamiento en Río de Janeiro, 2 noches de alojamiento en Búzios. City Tour por Maracaná (Exterior), Sambódromo (Exterior), Escaleras de Selaron. Centro Histórico de Río. Visita Cristo Redentor y Pan de Azúcar. Tour Arraial do Cabo desde Búzios.",
+    "flyerImage": "/packages/flyers/america--salidas-desde-cdmx--caribe-brasileno.png",
+    "year": 2026,
+    "operator": "EMETRAVEL BRASIL"
+  },
+  {
     "id": "america--salidas-desde-cdmx--navidad-en-rio-de-janeiro",
     "title": "Navidad en Río de Janeiro",
     "continent": "america",
@@ -576,6 +600,31 @@
     "operator": "EMETRAVEL ASIA"
   },
   {
+    "id": "2027--asia--mty--japon-imprescindible-con-disney",
+    "title": "Japón Imprescindible con Tokyo Disneyland",
+    "continent": "asia",
+    "departureCity": "Monterrey",
+    "destinations": [
+      "Tokio",
+      "Kioto",
+      "Osaka",
+      "Tokyo Disneyland"
+    ],
+    "countries": [
+      "Japón"
+    ],
+    "duration": "10D / 08N",
+    "dates": [
+      "3 MAR 2027"
+    ],
+    "price": 69900,
+    "currency": "MXN",
+    "includes": "Vuelo redondo Monterrey-Tokio con Aeroméxico, boleto de tren bala, 3 noches en Tokio, 3 noches en Kioto, 2 noches en Osaka, traslados, visitas indicadas, guías de habla hispana, entrada a Disneyland Tokio con transporte.",
+    "flyerImage": "/packages/flyers/2027--asia--mty--japon-imprescindible-con-disney.png",
+    "year": 2027,
+    "operator": "Emetravel Japón"
+  },
+  {
     "id": "asia--dubai-y-bali",
     "title": "Dubái y Bali",
     "continent": "asia",
@@ -634,36 +683,6 @@
     "includes": "Vuelo redondo México-Tokio-México con Aeroméxico (maleta 20kg), traslados, alojamiento en hoteles categoría turista con desayuno diario, vuelos internos, tren de alta velocidad Tokio-Osaka-Tokio, comidas y visitas según itinerario, guía de habla hispana.",
     "flyerImage": "/packages/flyers/asia--japon-y-tailandia-islas-phi-phi.png",
     "year": 2026,
-    "operator": "EMETRAVEL ASIA"
-  },
-  {
-    "id": "2027--asia--mty--japon-tailandia-islas-phi-phi-mty-2027",
-    "title": "JAPÓN Y TAILANDIA + ISLAS PHI PHI",
-    "continent": "asia",
-    "departureCity": "Monterrey",
-    "destinations": [
-      "Tokio",
-      "Nara",
-      "Osaka",
-      "Bangkok",
-      "Chiang Mai",
-      "Chiang Rai",
-      "Phuket",
-      "Koh Phi Phi"
-    ],
-    "countries": [
-      "Japón",
-      "Tailandia"
-    ],
-    "duration": "19D / 16N",
-    "dates": [
-      "16 MAR 2027"
-    ],
-    "price": 79900,
-    "currency": "MXN",
-    "includes": "Vuelo redondo Monterrey-Tokio-Monterrey con Aeroméxico, traslados, alojamiento en hoteles categoría turista con desayuno, comidas, vuelos internos, tren de alta velocidad Tokio-Osaka-Tokio, visitas indicadas y guía de habla hispana.",
-    "flyerImage": "/packages/flyers/2027--asia--mty--japon-tailandia-islas-phi-phi-mty-2027.png",
-    "year": 2027,
     "operator": "EMETRAVEL ASIA"
   },
   {
@@ -902,6 +921,35 @@
     "operator": "Eme Travel"
   },
   {
+    "id": "2027--europa--cdmx--invierno-en-madrid-y-paris-con-disney",
+    "title": "Invierno en Madrid y París con Disneyland París",
+    "continent": "europa",
+    "departureCity": "CDMX",
+    "destinations": [
+      "París",
+      "Disneyland París",
+      "Burdeos",
+      "Blois",
+      "San Sebastián",
+      "Madrid"
+    ],
+    "countries": [
+      "Francia",
+      "España"
+    ],
+    "duration": "8D / 6N",
+    "dates": [
+      "9 FEB",
+      "17 FEB"
+    ],
+    "price": 39900,
+    "currency": "MXN",
+    "includes": "Vuelo transatlántico con maleta documentada de 23 kg. Visitas indicadas. Traslados aeropuerto - hotel - aeropuerto. Transporte en autocar turístico para todas las transferencias y visitas programadas. Desayuno diario. Hospedaje en hoteles cat turista 3*. Guía correo de habla hispana durante todo el recorrido. Guías locales. Entrada a Disneyland París con Transporte incluido.",
+    "flyerImage": "/packages/flyers/2027--europa--cdmx--invierno-en-madrid-y-paris-con-disney.png",
+    "year": 2027,
+    "operator": "EMETRAVEL EUROPA"
+  },
+  {
     "id": "europa--salidas-desde-cdmx--madrid-y-paris-con-disney-2026",
     "title": "Madrid y París con Disney",
     "continent": "europa",
@@ -1050,13 +1098,13 @@
     "operator": "Eme Travel"
   },
   {
-    "id": "europa--salidas-desde-mty--verano-en-italia-y-paris-con-disney-mty",
-    "title": "Verano en Italia y París con Disney desde Monterrey",
+    "id": "europa--salidas-desde-cdmx--italia-y-paris-con-disney",
+    "title": "Italia & París con Disneyland Paris",
     "continent": "europa",
-    "departureCity": "Monterrey",
+    "departureCity": "CDMX",
     "destinations": [
       "París",
-      "Disneyland París",
+      "Disney",
       "Ginebra",
       "Aosta",
       "Venecia",
@@ -1072,42 +1120,12 @@
     ],
     "duration": "10D / 08N",
     "dates": [
-      "30 Jul"
-    ],
-    "price": 51900,
-    "currency": "MXN",
-    "includes": "Vuelo transatlántico con maleta documentada, visitas indicadas, traslados, autocar turístico, Vaporetto en Venecia, desayuno diario, entrada a Disneyland París, hoteles cat. turista 3*, guía de habla hispana, guías locales",
-    "flyerImage": "/packages/flyers/europa--salidas-desde-mty--verano-en-italia-y-paris-con-disney-mty.png",
-    "year": 2026,
-    "operator": "Eme Travel"
-  },
-  {
-    "id": "europa--salidas-desde-cdmx--verano-en-italia-y-paris-con-disney",
-    "title": "VERANO EN ITALIA & PARÍS con Disneyland PARIS",
-    "continent": "europa",
-    "departureCity": "CDMX",
-    "destinations": [
-      "París",
-      "Disney",
-      "Ginebra",
-      "Aosta",
-      "Venecia",
-      "Asís",
-      "Roma"
-    ],
-    "countries": [
-      "Francia",
-      "Suiza",
-      "Italia"
-    ],
-    "duration": "10D / 08N",
-    "dates": [
       "10 DE SEPTIEMBRE"
     ],
     "price": 51900,
     "currency": "MXN",
-    "includes": "Vuelo transatlántico con maleta documentada, visitas indicadas, traslados aeropuerto-hotel-aeropuerto, transporte en autocar turístico, traslado en vaporetto en Venecia, desayuno diario, hospedaje en hoteles 3 estrellas, guía de habla hispana, entrada a Disneyland París, guías locales.",
-    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--verano-en-italia-y-paris-con-disney.png",
+    "includes": "Vuelo transatlántico con maleta documentada, visitas indicadas, traslados (aeropuerto-hotel-aeropuerto), transporte en autocar, vaporetto en Venecia, desayuno diario, hospedaje en hoteles 3 estrellas, guía de habla hispana, entrada a Disneyland Paris, guías locales.",
+    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--italia-y-paris-con-disney.png",
     "year": 2026,
     "operator": "EMETRAVEL EUROPA"
   },
@@ -1146,8 +1164,8 @@
     "operator": "Eme Travel"
   },
   {
-    "id": "europa--salida-desde-cancun--europa-clasica-cancun",
-    "title": "Europa Clásica desde Cancún",
+    "id": "europa--salida-desde-cancun--europa-clasica-cun",
+    "title": "Europa Clásica",
     "continent": "europa",
     "departureCity": "Cancún",
     "destinations": [
@@ -1174,14 +1192,78 @@
     ],
     "duration": "18D / 16N",
     "dates": [
-      "6 Nov"
+      "6 DE NOVIEMBRE"
     ],
     "price": 52900,
     "currency": "MXN",
-    "includes": "Vuelo transatlántico con maleta documentada 23kg, visitas indicadas, traslados aeropuerto-hotel, autocar turístico, desayuno diario, hoteles cat. turista 3*, guía de habla hispana, guías locales",
-    "flyerImage": "/packages/flyers/europa--salida-desde-cancun--europa-clasica-cancun.png",
+    "includes": "Vuelo transatlántico con maleta documentada 23kg. Visitas indicadas. Traslados aeropuerto - hotel. Traslados en autocar turístico. Desayuno diario. Hospedaje en hoteles cat turista 3*. Guía correo de habla hispana durante todo el recorrido. Guías locales.",
+    "flyerImage": "/packages/flyers/europa--salida-desde-cancun--europa-clasica-cun.png",
     "year": 2026,
-    "operator": "Eme Travel"
+    "operator": "EMETRAVEL EUROPA"
+  },
+  {
+    "id": "2027--europa--gdl--invierno-en-encantos-de-europa-con-disney-gdl",
+    "title": "Invierno en Encantos de Europa con Disneyland Paris",
+    "continent": "europa",
+    "departureCity": "Guadalajara",
+    "destinations": [
+      "Roma",
+      "Florencia",
+      "Venecia",
+      "Milán",
+      "Lucerna",
+      "Zurich",
+      "París",
+      "Londres"
+    ],
+    "countries": [
+      "Italia",
+      "Suiza",
+      "Francia",
+      "Inglaterra"
+    ],
+    "duration": "15D / 13N",
+    "dates": [
+      "17 FEB 2027"
+    ],
+    "price": 54900,
+    "currency": "MXN",
+    "includes": "Vuelo trasatlántico México - Roma / Roma - Londres con maleta documentada 23 Kg, visitas indicadas, traslados Aeropuerto - Hotel, traslado en ferry o tren París - Londres, transporte en autocar turístico, desayuno diario, hospedaje en hoteles categoría turista 3*, guía correo de habla hispana, guías locales, entrada a Disneyland París.",
+    "flyerImage": "/packages/flyers/2027--europa--gdl--invierno-en-encantos-de-europa-con-disney-gdl.png",
+    "year": 2027,
+    "operator": "EMETRAVEL EUROPA"
+  },
+  {
+    "id": "2027--europa--cdmx--invierno-en-encantos-de-europa-con-disney-cdmx",
+    "title": "Invierno en Encantos de Europa con Disneyland Paris",
+    "continent": "europa",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Roma",
+      "Florencia",
+      "Venecia",
+      "Milán",
+      "Lucerna",
+      "Zurich",
+      "París",
+      "Londres"
+    ],
+    "countries": [
+      "Italia",
+      "Suiza",
+      "Francia",
+      "Inglaterra"
+    ],
+    "duration": "15D / 13N",
+    "dates": [
+      "10 FEB 2027"
+    ],
+    "price": 54900,
+    "currency": "MXN",
+    "includes": "Vuelo trasatlántico México - Roma / Roma - Londres con maleta documentada 23 Kg. Visitas indicadas. Traslados Aeropuerto - Hotel. Traslado en ferry o tren París - Londres. Transporte en autocar turístico para todas las transferencias y visitas programadas. Desayuno diario. Hospedaje en hoteles categoría turista 3*. Guía correo de habla hispana durante todo el recorrido. Guías locales. Entrada a Disneyland París. Transporte incluido.",
+    "flyerImage": "/packages/flyers/2027--europa--cdmx--invierno-en-encantos-de-europa-con-disney-cdmx.png",
+    "year": 2027,
+    "operator": "EMETRAVEL EUROPA"
   },
   {
     "id": "europa--salidas-desde-cdmx--europa-clasica-2026-cdmx",
@@ -1379,6 +1461,48 @@
     "flyerImage": "/packages/flyers/europa--salidas-desde-gdl--europa-clasica-gdl-2-2.png",
     "year": 2026,
     "operator": "Emetravel Europa"
+  },
+  {
+    "id": "2027--europa--cdmx--semana-santa-con-europa-clasica",
+    "title": "Semana Santa en Europa Clásica",
+    "continent": "europa",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Madrid",
+      "Burgos",
+      "Barcelona",
+      "Zaragoza",
+      "Lucerna",
+      "Zurich",
+      "Burdeos",
+      "Blois",
+      "París",
+      "Costa Azul",
+      "Venecia",
+      "Pisa",
+      "Florencia",
+      "Roma"
+    ],
+    "countries": [
+      "España",
+      "Suiza",
+      "Francia",
+      "Italia"
+    ],
+    "duration": "17D / 15N",
+    "dates": [
+      "12 MAR 2027",
+      "22 MAR 2027",
+      "25 MAR 2027",
+      "28 MAR 2027",
+      "30 MAR 2027"
+    ],
+    "price": 56000,
+    "currency": "MXN",
+    "includes": "Vuelo transatlántico con maleta documentada 23kg, visitas indicadas, traslados aeropuerto-hotel, traslados en autocar turístico, desayuno diario, hospedaje en hoteles cat turista 3*, guía correo de habla hispana durante todo el recorrido, guías locales.",
+    "flyerImage": "/packages/flyers/2027--europa--cdmx--semana-santa-con-europa-clasica.png",
+    "year": 2027,
+    "operator": "EMETRAVEL EUROPA"
   },
   {
     "id": "europa--salidas-desde-cdmx--ruta-de-los-alpes-con-glaciar-express-2026",
@@ -1720,35 +1844,99 @@
     "operator": "EMETRAVEL EUROPA"
   },
   {
-    "id": "europa--salidas-desde-cdmx--auroras-boreales",
-    "title": "Auroras Boreales en Islandia",
+    "id": "2027--europa--mty--semana-santa-en-europa-9-naciones-mty",
+    "title": "SEMANA SANTA EN EUROPA 9 NACIONES",
     "continent": "europa",
-    "departureCity": "CDMX",
+    "departureCity": "Monterrey",
     "destinations": [
-      "Ámsterdam",
-      "Bruselas",
+      "Lucerna",
+      "Zurich",
       "París",
-      "Reikiavik",
-      "Círculo de Oro"
+      "Costa Azul",
+      "Frankfurt",
+      "Heidelberg",
+      "Madrid",
+      "Barcelona",
+      "Zaragoza",
+      "Padova",
+      "Venecia",
+      "Pisa",
+      "Florencia",
+      "Roma",
+      "Luxemburgo",
+      "Innsbruck",
+      "Londres",
+      "Montecarlo"
     ],
     "countries": [
-      "Países Bajos",
-      "Bélgica",
+      "Suiza",
       "Francia",
-      "Islandia"
+      "Alemania",
+      "España",
+      "Italia",
+      "Luxemburgo",
+      "Austria",
+      "Inglaterra",
+      "Mónaco"
     ],
-    "duration": "12D / 9N",
+    "duration": "19D / 17N",
     "dates": [
-      "29 Sep",
-      "10 Oct",
-      "5 Dic"
+      "10 MAR 2027"
     ],
-    "price": 65000,
+    "price": 63000,
     "currency": "MXN",
-    "includes": "Vuelo transatlántico con maleta documentada 23kg, vuelo París-Reikiavik-Ámsterdam con maleta documentada 20kg, traslados aeropuerto-hotel, autocar turístico, desayuno diario, guía de habla hispana, hoteles cat. turista 3*, 2 noches Ámsterdam, 1 noche Bruselas, 2 noches París, 4 noches Reikiavik",
-    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--auroras-boreales.jpg",
-    "year": 2026,
-    "operator": "Eme Travel"
+    "includes": "Vuelo transatlántico con maleta documentada 23 kg. Visitas indicadas. Traslado en ferry o tren Londres/París. Traslados aeropuerto-hotel. Transporte en autocar turístico para todas las transferencias y visitas programadas. Desayuno diario. Traslado en Vaporetto. Hospedaje en hoteles cat turista 3*. Guía correo de habla hispana durante todo el recorrido. Guías locales en lugares indicados.",
+    "flyerImage": "/packages/flyers/2027--europa--mty--semana-santa-en-europa-9-naciones-mty.png",
+    "year": 2027,
+    "operator": "EMETRAVEL EUROPA"
+  },
+  {
+    "id": "2027--europa--gdl--semana-santa-en-europa-9-naciones",
+    "title": "SEMANA SANTA EN EUROPA 9 NACIONES",
+    "continent": "europa",
+    "departureCity": "Guadalajara",
+    "destinations": [
+      "Lucerna",
+      "Zurich",
+      "París",
+      "Costa Azul",
+      "Frankfurt",
+      "Heidelberg",
+      "Madrid",
+      "Barcelona",
+      "Zaragoza",
+      "Padova",
+      "Venecia",
+      "Pisa",
+      "Florencia",
+      "Roma",
+      "Luxemburgo",
+      "Innsbruck",
+      "Londres",
+      "Montecarlo"
+    ],
+    "countries": [
+      "Suiza",
+      "Francia",
+      "Alemania",
+      "España",
+      "Italia",
+      "Luxemburgo",
+      "Austria",
+      "Inglaterra",
+      "Mónaco"
+    ],
+    "duration": "19D / 17N",
+    "dates": [
+      "13 MAR",
+      "27 MAR"
+    ],
+    "price": 64000,
+    "currency": "MXN",
+    "includes": "Vuelo transatlántico con maleta documentada 23 kg. Visitas indicadas. Traslado en ferry o tren Londres / París. Traslados aeropuerto - hotel. Transporte en autocar turístico para todas las transferencias y visitas programadas. Desayuno diario. Traslado en Vaporetto. Hospedaje en hoteles cat turista 3 *. Guía correo de habla hispana durante todo el recorrido. Guías locales en lugares indicados.",
+    "flyerImage": "/packages/flyers/2027--europa--gdl--semana-santa-en-europa-9-naciones.png",
+    "year": 2027,
+    "operator": "EMETRAVEL EUROPA"
   },
   {
     "id": "2027--europa--cdmx--auroras-boreales-001",
@@ -1779,6 +1967,35 @@
     "includes": "Vuelo trasatlántico y vuelos internos con maleta documentada, traslados aeropuerto-hotel y en autocar turístico, desayuno diario, hospedaje en hoteles 3*, guía de habla hispana.",
     "flyerImage": "/packages/flyers/2027--europa--cdmx--auroras-boreales-001.png",
     "year": 2027,
+    "operator": "EMETRAVEL EUROPA"
+  },
+  {
+    "id": "europa--salidas-desde-cdmx--auroras-boreales-en-islandia",
+    "title": "Auroras Boreales en Islandia + Ámsterdam + París + Bruselas",
+    "continent": "europa",
+    "departureCity": "CDMX",
+    "destinations": [
+      "Ámsterdam",
+      "Bruselas",
+      "París",
+      "Reikiavik",
+      "Círculo de Oro"
+    ],
+    "countries": [
+      "Países Bajos",
+      "Bélgica",
+      "Francia",
+      "Islandia"
+    ],
+    "duration": "12D / 9N",
+    "dates": [
+      "25 SEPTIEMBRE / 10 OCTUBRE 2026"
+    ],
+    "price": 65000,
+    "currency": "MXN",
+    "includes": "Vuelo trasatlántico con maleta documentada 23 Kg. Vuelo París-Reikiavik-Ámsterdam con maleta documentada 20 kg. Traslados aeropuerto-hotel. Traslados en autocar turístico. Desayuno diario. Hospedaje en hoteles cat. turista 3*. Guía de habla hispana. 2 noches en Ámsterdam. 1 noche en Bruselas. 2 noches en París. 4 noches en Reikiavik",
+    "flyerImage": "/packages/flyers/europa--salidas-desde-cdmx--auroras-boreales-en-islandia.png",
+    "year": 2026,
     "operator": "EMETRAVEL EUROPA"
   },
   {
